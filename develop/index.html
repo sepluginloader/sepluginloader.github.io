@@ -1,0 +1,54 @@
+---
+title: Plugin Loader Development
+---
+<h1>Plugin Developers</h1>
+<h2>Get Started</h2>
+<p>To make a plugin for Plugin Loader, there are a few basic steps.</p>
+<ol>
+	<li>Publish your code on github</li>
+	<li>Fork the <a href="https://github.com/sepluginloader/PluginHub">Plugin Hub</a></li>
+	<li>Add <a href="https://github.com/sepluginloader/PluginHub/blob/main/sample-github">your xml file</a> to the Plugins\ folder in the repository</li>
+	<li>Submit a pull request and the approval team will approve or deny the request</li>
+</ol>
+<p>To use the plugin settings button in the plugin list, simply create this method in your IPlugin class: public void OpenConfigDialog()</p>
+<h2>Rules</h2>
+<p>All plugins and mods must follow some basic rules:</p>
+<ul>
+	<li>Avoid adding features that might give an excessive advantage to players in multiplayer</li>
+	<li>Use C# version 7.3 maximum</li>
+	<li>No modifying the mod API whitelist</li>
+	<li>No modifying the availability or visibility of DLC in game</li>
+	<li>Do not use the harmony reverse patch feature or the HarmonyReversePatch attribute</li>
+	<li>Avoid using Harmony.PatchAll(), use Harmony.PatchAll(Assembly.GetExecutingAssembly()) instead</li>
+	<li>Plugin Loader doesn't know how to read project files, so make sure there aren't any unnecessary cs files in your repository</li>
+	<li>Don't use assembly name or location</li>
+	<li>No built in auto updating functionality</li>
+</ul>
+<h2>Testing</h2>
+<p>
+	An easier way to develop plugins is to use the development folder feature. In this mode Plugin Loader will compile your plugin at startup so you don't need to worry about dll files. Once the plugin is loaded you can attach your IDE to the game and you should be able to use breakpoints to debug your code.
+</p>
+<p>
+	To add your project to the list, simply click "Add development folder" in the advanced menu of the plugin list. You will need to provide the root folder of your project and your plugin hub xml file. It is highly recommended that you install git so that Plugin Loader can use it to filter out files that should be ignored.
+</p>
+<p>
+	Once you have your development plugin in the list, you can right click it to delete it, load a new plugin hub file, or switch between debug and release builds.
+</p>
+<p>
+	You can use Ctrl + Alt + F5 in the plugin list or in game to restart the game.
+</p>
+<h2>Client Mods</h2>
+<p>To add a client mod to the list, the instructions are similar to the steps for adding a plugin to the list.</p>
+<ol>
+	<li>Fork the <a href="https://github.com/sepluginloader/PluginHub">Plugin Hub</a></li>
+	<li>Add <a href="https://github.com/sepluginloader/PluginHub/blob/main/sample-mod">the xml file</a> to the Plugins\Mods\ folder in the repository</li>
+	<li>Submit a pull request and the approval team will approve or deny the request</li>
+</ol>
+<p>An incomplete list of things that will not work in client side mods:</p>
+<ul>
+	<li>Server side code or networking</li>
+	<li>Adding blocks or editing the behavior of blocks</li>
+	<li>Adding actions to button panels or timer blocks</li>
+	<li>Programmable block APIs</li>
+	<li>Visual scripting</li>
+</ul>

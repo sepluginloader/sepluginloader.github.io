@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ page.title }}</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="stylesheet" href="/global.css">
+</head>
+<body>
+	<header class="header">
+		<a class="logo" href="/">
+			<img src="/android-chrome-192x192.png" alt="icon">
+		</a>
+		<nav>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="/">Home</a></li>
+				<li><a href="/install">Install</a></li>
+				<li><a href="https://github.com/sepluginloader/PluginLoader/wiki">Wiki</a></li>
+				<li><a href="/hub">Plugins</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="main-content">
+			{{ content }}
+		</div>
+	</main>
+</body>
+</html>
