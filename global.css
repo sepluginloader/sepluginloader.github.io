@@ -7,7 +7,12 @@ html {
 body {
 	min-height: 100%;
 	margin: 0;
-	font-family: Helvetica, sans-serif;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #EEE;
 }
 
 .header {
@@ -40,28 +45,27 @@ body {
 	flex-grow: 1;
 }
 
-.header ul {
+nav .menu {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	overflow: hidden;
 }
 
-.header li a {
+nav li a {
 	display: block;
 	padding: 20px 20px;
 	text-decoration: none;
+	line-height: 1;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-	background-color: #f4f4f4;
+nav li a:hover,
+nav .menu-icon:hover {
+	background-color: #6a6a6a;
 }
-
 
 /* menu icon */
-
-.header .menu-icon {
+nav .menu-icon {
 	cursor: pointer;
 	float: right;
 	padding: 28px 20px;
@@ -69,8 +73,8 @@ body {
 	user-select: none;
 }
 
-.header .menu-icon .navicon {
-	background: #333;
+nav .menu-icon .navicon {
+	background: #EEE;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -78,9 +82,9 @@ body {
 	width: 18px;
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
-	background: #333;
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+	background: #EEE;
 	content: '';
 	display: block;
 	height: 100%;
@@ -89,27 +93,30 @@ body {
 	width: 100%;
 }
 
-.header .menu-icon .navicon:before {
+nav .menu-icon .navicon:before {
 	top: 5px;
 }
 
-.header .menu-icon .navicon:after {
+nav .menu-icon .navicon:after {
 	top: -5px;
 }
 
 /* menu btn */
 
-.header .menu-btn {
+nav .menu-btn {
 	display: none;
 }
 
-.header .menu {
+nav .menu {
 	clear: both;
 	max-height: 0;
 	transition: max-height .2s ease-out;
+	background-color: #1e1e24;
+	float: right;
+	text-align: right;
 }
 
-.header .menu-btn:checked ~ .menu {
+nav .menu-btn:checked ~ .menu {
 	max-height: 240px;
 }
 
@@ -130,28 +137,26 @@ body {
 	top: 0;
 }
 
+/* Non mobile header */
 @media (min-width: 768px) {
-	.header ul {
-		height: 100%;
-	}
 	.header li {
-		float: left;
-		height: 75%;
-		display: table;
-		background-color: white;
-		color: black;
-		border-radius: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.header li a {
 		padding: 10px 30px;
+		border-radius: 15px;
 	}
 	.header .menu {
+		height: 100%;
 		clear: none;
 		float: right;
 		max-height: none;
 		display: flex;
 		align-items: center;
 		gap: 10px;
+		margin-right: 10px;
 	}
 	.header .menu-icon {
 		display: none;
