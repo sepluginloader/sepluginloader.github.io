@@ -56,7 +56,6 @@ nav li a {
 	display: block;
 	padding: 20px 20px;
 	text-decoration: none;
-	line-height: 1;
 }
 
 nav li a:hover,
@@ -68,9 +67,13 @@ nav .menu-icon:hover {
 nav .menu-icon {
 	cursor: pointer;
 	float: right;
-	padding: 28px 20px;
+	padding: 0 20px;
 	position: relative;
 	user-select: none;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 nav .menu-icon .navicon {
@@ -117,38 +120,38 @@ nav .menu {
 }
 
 nav .menu-btn:checked ~ .menu {
-	max-height: 240px;
+	max-height: calc(59px * 5); /* Update this number to match the number of menu items */
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+nav .menu-btn:checked ~ .menu-icon .navicon {
 	background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
 	transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
 	transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before,
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+nav .menu-btn:checked ~ .menu-icon .navicon:before,
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
 	top: 0;
 }
 
 /* Non mobile header */
 @media (min-width: 768px) {
-	.header li {
+	nav li {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	.header li a {
+	nav li a {
 		padding: 10px 30px;
 		border-radius: 15px;
 	}
-	.header .menu {
+	nav .menu {
 		height: 100%;
 		clear: none;
 		float: right;
@@ -158,7 +161,7 @@ nav .menu-btn:checked ~ .menu {
 		gap: 10px;
 		margin-right: 10px;
 	}
-	.header .menu-icon {
+	nav .menu-icon {
 		display: none;
 	}
 }
