@@ -230,3 +230,13 @@ h1, h2, h3, h4, h5, h6 {
 {
 	width: 60%;
 }
+
+.iframe {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.iframe iframe {
+	width: calc(40vh * (16 / 9));
+	height: 40vh;
+}
