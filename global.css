@@ -214,20 +214,17 @@ h1, h2, h3, h4, h5, h6 {
 	width: 50px;
 	height: 50px;
 	background-color: #f4f4f4;
-	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	transition: transform .3s ease-out;
+	transition: transform .3s ease-out, box-shadow .3s ease-out;
 }
-
-.logo-box a:hover
-{
+.logo-box a:hover {
 	transform: translateY(-5px);
+	box-shadow: 0 0 4px 0 var(--text-color);
 }
-
-.logo-box a img
-{
+.logo-box a img {
 	width: 60%;
 }
 
