@@ -182,3 +182,31 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: auto;
 	max-width: 100%;
 }
+
+.main-content > .logo-box {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.logo-box a {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	transition: transform .3s ease-out;
+}
+
+.logo-box a:hover
+{
+	transform: translateY(-5px);
+}
+
+.logo-box a img
+{
+	width: 60%;
+}
