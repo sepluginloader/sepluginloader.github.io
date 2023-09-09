@@ -1,6 +1,8 @@
 let hubData = {};
 let statsData = {};
 
+let plugins = [];
+
 const UrlRegex = /https?:\/\/(www\.)?[\w-.]{2,256}\.[a-z]{2,4}\b[\w-.@:%\+~#?&//=]*/g
 const IllegalChars = {
 	"&": "&amp;",
@@ -74,6 +76,7 @@ function createModObject(data, listRoot) {
 	if(!data || !data["id"])
 		return;
 
+
 	let div = $(document.createElement("a"));
 	div.attr("href", "https://steamcommunity.com/sharedfiles/filedetails/?id=" + data["id"])
 	div.addClass("plugin");
@@ -86,12 +89,18 @@ function createModObject(data, listRoot) {
 }
 
 function createListElements(data, div) {
+	let pluginObject = {
+		div: div,
+		hidden: false,
+	};
 
 	if(data["name"]) {
 		let name = $(document.createElement("div"));
 		name.addClass("plugin-name");
 		name.text(data["name"]);
 		div.append(name);
+		pluginObject.name = data["name"];
+		pluginObject.nameUpper = pluginObject.name.toUpperCase();
 	} else {
 		return false;
 	}
@@ -113,8 +122,10 @@ function createListElements(data, div) {
 
 	if(data["hidden"] === true) {
 		div.addClass("hidden");
+		pluginObject.hidden = true;
 	}
 
+	plugins.push(pluginObject);
 	return true;
 }
 
@@ -158,6 +169,47 @@ function escapeText(s)
 	return escapedText;
 }
 
+function onSearchEntered() {
+	let search = $("#search-box").val();
+	let filter = null;
+	if(typeof search === "string")
+		filter = search.toUpperCase().split(/ +/);
+	for(let plugin in plugins)
+		setHidden(filter, plugins[plugin]);
+	console.log("Changed: ", filter);
+}
+
+function setHidden(search, plugin) {
+	if(!search) {
+		setPluginHidden(plugin, plugin.hidden); // No search terms
+		return;
+	}
+
+	let searchValid = false;
+	for (let i in search) {
+		let filter = search[i];
+		if(filter.length > 0) {
+			if(!plugin.nameUpper.includes(filter)) {
+				setPluginHidden(plugin, true); // Search does not match
+				return;
+			}
+			searchValid = true;
+		}
+	}
+
+	if(searchValid)
+		setPluginHidden(plugin, false); // All search terms match
+	else
+		setPluginHidden(plugin, plugin.hidden); // No search terms
+}
+
+function setPluginHidden(plugin, hidden) {
+	if(hidden)
+		plugin.div.addClass("hidden");
+	else
+		plugin.div.removeClass("hidden");
+}
+
 $(document).ready(function() {
 	const PluginHubUrl = "output.json";
 	$.get({
@@ -166,5 +218,6 @@ $(document).ready(function() {
 		error: onRequestError,
 		dataType: "json",
 	});
+	$("#search-box").on("input", onSearchEntered);
 })
 
