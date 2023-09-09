@@ -43,18 +43,49 @@ function makeUi() {
 		return;
 
 	for (let key in plugins) {
-		createListObject(plugins[key], listRoot);
-		console.log(key, plugins[key]);
+		createPluginObject(plugins[key], listRoot);
+	}
+
+	listRoot = $("#client-mods");
+	let mods = hubData["mods"];
+	if(!mods)
+		return;
+
+	for (let key in mods) {
+		createModObject(mods[key], listRoot);
 	}
 }
 
-function createListObject(data, listRoot) {
-	if(!data || data["hidden"] === true)
+function createPluginObject(data, listRoot) {
+	if(!data || !data["id"])
 		return;
 
 	let div = $(document.createElement("div"));
 	div.addClass("plugin");
 	div.addClass("tooltip-parent");
+	
+	if(!createListElements(data, div))
+		return;
+
+	listRoot.append(div);
+}
+
+function createModObject(data, listRoot) {
+	if(!data || !data["id"])
+		return;
+
+	let div = $(document.createElement("a"));
+	div.attr("href", "https://steamcommunity.com/sharedfiles/filedetails/?id=" + data["id"])
+	div.addClass("plugin");
+	div.addClass("tooltip-parent");
+	
+	if(!createListElements(data, div))
+		return;
+
+	listRoot.append(div);
+}
+
+function createListElements(data, div) {
 
 	if(data["name"]) {
 		let name = $(document.createElement("div"));
@@ -62,7 +93,7 @@ function createListObject(data, listRoot) {
 		name.text(data["name"]);
 		div.append(name);
 	} else {
-		return;
+		return false;
 	}
 
 	if(data["author"]) {
@@ -80,7 +111,11 @@ function createListObject(data, listRoot) {
 		div.append(tooltip);
 	}
 
-	listRoot.append(div);
+	if(data["hidden"] === true) {
+		div.addClass("hidden");
+	}
+
+	return true;
 }
 
 /**

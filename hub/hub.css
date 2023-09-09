@@ -2,7 +2,7 @@
 	max-width: 1000px;
 }
 
-#plugin-list {
+.plugin-list {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -10,7 +10,7 @@
 	gap: 10px;
 }
 
-#plugin-list .plugin {
+.plugin-list .plugin {
 	max-width: 400px;
 	min-width: 100px;
 	flex-shrink: 1;
@@ -21,11 +21,11 @@
 	padding: 5px;
 }
 
-#plugin-list .plugin:hover {
+.plugin-list .plugin:hover {
 	cursor: pointer;
 }
 
-#plugin-list > input {
+.plugin-list > input {
 	display: none;
 }
 
