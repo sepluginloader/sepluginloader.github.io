@@ -235,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .iframe iframe {
 	width: calc(40vh * (16 / 9));
+	max-width: 100vw;
 	height: 40vh;
 	border: none;
 }
