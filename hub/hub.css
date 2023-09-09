@@ -1,0 +1,63 @@
+.main-content {
+	max-width: 1000px;
+}
+
+#plugin-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+#plugin-list .plugin {
+	max-width: 400px;
+	min-width: 100px;
+	flex-shrink: 1;
+	flex-grow: 1;
+	overflow: hidden;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#plugin-list .plugin:hover {
+	cursor: pointer;
+}
+
+#plugin-list > input {
+	display: none;
+}
+
+/* plugin item display */
+
+.plugin div {
+	text-align: center;
+}
+
+.plugin .plugin-name {
+	font-weight: bold;
+}
+
+.plugin .plugin-author {
+	font-style: italic;
+}
+
+/* tooltip */
+.tooltip-parent:hover .tooltip {
+	display: block;
+	text-align: left;
+}
+
+.tooltip {
+	display: none;
+	position: absolute;
+	background: var(--highlight-color);
+	color: black;
+	margin-left: 20px;
+	padding: 5px;
+	z-index: 1000;
+	text-align: left;
+}
+
+/* details menu */
