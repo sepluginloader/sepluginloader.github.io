@@ -87,8 +87,7 @@ function createIcon(src, alt, url) {
 
 function onReadmeReceived(data, textStatus, jqXHR) {
 	let converter = new showdown.Converter();
-	if(data.match(/^\s*# /))
-		$("#plugin-name").addClass("hidden");
+	data = data.replace(/^\s*#.+/, ""); // Remove the title
 	$("#plugin-desc").html(converter.makeHtml(data));
 }
 

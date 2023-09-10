@@ -3,6 +3,13 @@ pre {
 	padding: 1em 10px;
 }
 
+#plugin-desc {
+	border: 1px solid var(--content-border-color);
+	background-color: var(--content-bg-color);
+	border-radius: 20px;
+	padding: 40px;
+}
+
 #plugin-desc a {
 	text-decoration: underline;
 }

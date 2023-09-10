@@ -4,6 +4,8 @@
 	--header-text-color: black;
 	--main-color: white;
 	--text-color: black;
+	--content-bg-color: white;
+	--content-border-color: #b6b6b6;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -12,6 +14,8 @@
 		--header-text-color: #eeeeee;
 		--main-color: #1a191f;
 		--text-color: #f4f4f4;
+		--content-bg-color: #312f3a;
+		--content-border-color: #2e2e2e;
 	}
 }
 
