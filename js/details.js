@@ -11,8 +11,9 @@ function onDocumentReady() {
 			let type = urlParams.get("type");
 			if(type) {
 				pluginId = id;
-				pluginType = type;
-				getDetailsForPlugin();
+				pluginType = type;;
+				createBackIcon(type);
+				getDetailsForPlugin()
 			} else {
 				redirect404();
 			}
@@ -26,6 +27,22 @@ function onDocumentReady() {
 
 function redirect404() {
 	window.location.replace(window.location.origin + "/404");
+}
+
+function createBackIcon(type) {
+	let url;
+	switch (type) {
+		case "plugin":
+			url = "/hub/plugins";
+			break;
+		case "mod":
+			url = "/hub/mods";
+			break;
+		default:
+			url = "/hub";
+			break;
+	}
+	$("#open-logo").append(createIcon("/img/back.svg", "Back", url));
 }
 
 function getDetailsForPlugin() {
