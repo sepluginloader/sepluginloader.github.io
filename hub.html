@@ -1,7 +1,15 @@
 ---
 title: Plugin Hub
-permalink: /hub
+script:
+  - https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js
+  - /js/hub.js
+  - /js/plugins.js
+style: /css/hub.css
 ---
 <h1>Plugin Hub</h1>
-<h2><a href="/hub/plugins">Plugins</a></h2>
-<h2><a href="/hub/mods">Mods</a></h2>
+<input id="search-box" type="text" placeholder="Search...">
+<h2>Plugins</h2>
+<div id="plugin-list" class="plugin-list"></div>
+<h2>Client Mods</h2>
+<div id="client-mods" class="plugin-list"></div>
+

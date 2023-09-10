@@ -3,6 +3,17 @@ let statsData = {};
 
 let plugins = [];
 
+$(document).ready(function() {
+	const PluginHubUrl = "/PluginHub/all.json";
+	$.get({
+		url: PluginHubUrl,
+		success: onHubDataReceived,
+		error: onRequestError,
+		dataType: "json",
+	});
+	$("#search-box").on("input", onSearchEntered);
+});
+
 function onHubDataReceived(data, textStatus, jqXHR) {
 	const StatsUrl = "https://pluginstats.ferenczi.eu/stats";
 	hubData = data;
@@ -33,7 +44,7 @@ function makeUi() {
 		let plugins = hubData["plugins"];
 		if(plugins) {
 			for (let key in plugins) {
-				createPluginObject(plugins[key], listRoot);
+				createPluginObject(plugins[key], listRoot, "plugin");
 			}
 		}
 	}
@@ -43,33 +54,18 @@ function makeUi() {
 		let mods = hubData["mods"];
 		if(mods) {
 			for (let key in mods) {
-				createModObject(mods[key], listRoot);
+				createPluginObject(mods[key], listRoot, "mod");
 			}
 		}
 	}
 }
 
-function createPluginObject(data, listRoot) {
+function createPluginObject(data, listRoot, type) {
 	if(!data || !data["id"])
 		return;
-
-	let div = $(document.createElement("div"));
-	div.addClass("plugin");
-	div.addClass("tooltip-parent");
-	
-	if(!createListElements(data, div))
-		return;
-
-	listRoot.append(div);
-}
-
-function createModObject(data, listRoot) {
-	if(!data || !data["id"])
-		return;
-
 
 	let div = $(document.createElement("a"));
-	div.attr("href", "https://steamcommunity.com/sharedfiles/filedetails/?id=" + data["id"])
+	div.attr("href", `/hub/details?type=${type}&id=${encodeURIComponent(data["id"])}`)
 	div.addClass("plugin");
 	div.addClass("tooltip-parent");
 	
