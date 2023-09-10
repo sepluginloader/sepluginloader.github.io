@@ -6,3 +6,7 @@ pre {
 #plugin-desc a {
 	text-decoration: underline;
 }
+
+.logo-box {
+	margin-top: 20px;
+}
