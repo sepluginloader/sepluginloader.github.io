@@ -62,11 +62,6 @@ function onHubDataReceived(data, textStatus, jqXHR) {
 		case "plugin":
 			pluginData = data["plugins"];
 			$.get({
-				url: `https://raw.githubusercontent.com/${pluginId}/main/README.md`,
-				success: onReadmeReceived,
-				error: onRequestError,
-			});
-			$.get({
 				url: `https://raw.githubusercontent.com/${pluginId}/master/README.md`,
 				success: onReadmeReceived,
 				error: onRequestError,
