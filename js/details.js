@@ -94,7 +94,11 @@ function onReadmeReceived(data, textStatus, jqXHR) {
 
 function writeUi(pluginData, icon) {
 	$("#plugin-name").text(pluginData["name"]);
-	$("#plugin-desc").html(escapeText(pluginData["description"]));
+	let desc = pluginData["description"];
+	if(!desc)
+		desc = pluginData["tooltip"];
+	if(desc)
+		$("#plugin-desc").html(escapeText(desc));
 	$("#open-logo").append(icon);
 }
 
