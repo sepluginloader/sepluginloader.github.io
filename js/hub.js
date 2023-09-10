@@ -29,22 +29,23 @@ function makeUi() {
 		return;
 
 	let listRoot = $("#plugin-list");
-
-	let plugins = hubData["plugins"];
-	if(!plugins)
-		return;
-
-	for (let key in plugins) {
-		createPluginObject(plugins[key], listRoot);
+	if (listRoot) {
+		let plugins = hubData["plugins"];
+		if(plugins) {
+			for (let key in plugins) {
+				createPluginObject(plugins[key], listRoot);
+			}
+		}
 	}
 
 	listRoot = $("#client-mods");
-	let mods = hubData["mods"];
-	if(!mods)
-		return;
-
-	for (let key in mods) {
-		createModObject(mods[key], listRoot);
+	if (listRoot) {
+		let mods = hubData["mods"];
+		if(mods) {
+			for (let key in mods) {
+				createModObject(mods[key], listRoot);
+			}
+		}
 	}
 }
 
