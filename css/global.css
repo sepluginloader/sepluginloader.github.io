@@ -6,6 +6,7 @@
 	--text-color: black;
 	--content-bg-color: white;
 	--content-border-color: #b6b6b6;
+	--button-color: #dfdfdf;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -16,6 +17,7 @@
 		--text-color: #f4f4f4;
 		--content-bg-color: #312f3a;
 		--content-border-color: #2e2e2e;
+		--button-color: #f4f4f4;
 	}
 }
 
@@ -34,7 +36,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--header-text-color);
+	color: var(--text-color);
 }
 
 .header {
@@ -218,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	background-color: #f4f4f4;
+	background-color: var(--button-color);
 	box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
 	display: flex;
 	justify-content: center;
