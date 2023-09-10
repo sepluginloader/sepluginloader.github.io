@@ -3,16 +3,6 @@ let statsData = {};
 
 let plugins = [];
 
-const UrlRegex = /https?:\/\/(www\.)?[\w-.]{2,256}\.[a-z]{2,4}\b[\w-.@:%\+~#?&//=]*/g
-const IllegalChars = {
-	"&": "&amp;",
-	"<": "&lt;",
-	">": "&gt;",
-	'"': "&quot;",
-	"'": "&#39;",
-	"\n": "<br>",
-};
-
 function onHubDataReceived(data, textStatus, jqXHR) {
 	const StatsUrl = "https://pluginstats.ferenczi.eu/stats";
 	hubData = data;
@@ -129,46 +119,6 @@ function createListElements(data, div) {
 	return true;
 }
 
-/**
-	 * Process a string and make it usable as html
-	 * @param {string} s The text to process
-	 * @returns A string with all the invalid characters replaced
-	 */
-function escapeHTML(s) 
-{
-	return s.replace(/[&<>'"\n]/g, function(c) 
-	{
-		return IllegalChars[c];
-	});
-}
-
-/**
- * Escapes HTML tags and adds links to the text.
- * @param {string} s The text to process
- */
-function escapeText(s)
-{
-	let escapedText = "";
-	let start = 0;
-	for (const match of s.matchAll(UrlRegex)) 
-	{
-		if(match.index > start)
-			escapedText += escapeHTML(s.substring(start, match.index));
-
-		start = match.index + match[0].length;
-
-		let url = escapeHTML(match[0]);
-		escapedText += "<a href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\">" + url + "</a>";
-	}
-	if(start == 0)
-		return escapeHTML(s);
-
-	if(start < s.length)
-		escapedText += escapeHTML(s.substring(start));
-
-	return escapedText;
-}
-
 function onSearchEntered() {
 	let search = $("#search-box").val();
 	let filter = null;
@@ -210,14 +160,53 @@ function setPluginHidden(plugin, hidden) {
 		plugin.div.removeClass("hidden");
 }
 
-$(document).ready(function() {
-	const PluginHubUrl = "output.json";
-	$.get({
-		url: PluginHubUrl,
-		success: onHubDataReceived,
-		error: onRequestError,
-		dataType: "json",
-	});
-	$("#search-box").on("input", onSearchEntered);
-})
+// Text Escaping
+const UrlRegex = /https?:\/\/(www\.)?[\w-.]{2,256}\.[a-z]{2,4}\b[\w-.@:%\+~#?&//=]*/g
+const IllegalChars = {
+	"&": "&amp;",
+	"<": "&lt;",
+	">": "&gt;",
+	'"': "&quot;",
+	"'": "&#39;",
+	"\n": "<br>",
+};
 
+/**
+	 * Process a string and make it usable as html
+	 * @param {string} s The text to process
+	 * @returns A string with all the invalid characters replaced
+	 */
+function escapeHTML(s) 
+{
+	return s.replace(/[&<>'"\n]/g, function(c) 
+	{
+		return IllegalChars[c];
+	});
+}
+
+/**
+ * Escapes HTML tags and adds links to the text.
+ * @param {string} s The text to process
+ */
+function escapeText(s)
+{
+	let escapedText = "";
+	let start = 0;
+	for (const match of s.matchAll(UrlRegex)) 
+	{
+		if(match.index > start)
+			escapedText += escapeHTML(s.substring(start, match.index));
+
+		start = match.index + match[0].length;
+
+		let url = escapeHTML(match[0]);
+		escapedText += "<a href=\"" + url + "\" target=\"_blank\" rel=\"noopener noreferrer\">" + url + "</a>";
+	}
+	if(start == 0)
+		return escapeHTML(s);
+
+	if(start < s.length)
+		escapedText += escapeHTML(s.substring(start));
+
+	return escapedText;
+}
