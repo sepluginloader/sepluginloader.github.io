@@ -17,18 +17,7 @@ $(document).ready(function() {
 function onHubDataReceived(data, textStatus, jqXHR) {
 	const StatsUrl = "https://pluginstats.ferenczi.eu/stats";
 	hubData = data;
-	// TODO
-	/*$.get({
-		url: StatsUrl,
-		success: onStatsDataReceived,
-		error: onRequestError,
-		dataType: "json",
-	});*/
 	makeUi();
-}
-
-function onStatsDataReceived(data, textStatus, jqXHR) {
-
 }
 
 function onRequestError(jqXHR, textStatus, errorThrown) {
@@ -43,6 +32,7 @@ function makeUi() {
 	if (listRoot) {
 		let plugins = hubData["plugins"];
 		if(plugins) {
+			plugins.sort(sortPlugins);
 			for (let key in plugins) {
 				createPluginObject(plugins[key], listRoot, "plugin");
 			}
@@ -53,6 +43,7 @@ function makeUi() {
 	if (listRoot) {
 		let mods = hubData["mods"];
 		if(mods) {
+			mods.sort(sortPlugins);
 			for (let key in mods) {
 				createPluginObject(mods[key], listRoot, "mod");
 			}
@@ -155,6 +146,16 @@ function setPluginHidden(plugin, hidden) {
 		plugin.div.addClass("hidden");
 	else
 		plugin.div.removeClass("hidden");
+}
+
+function sortPlugins(a, b) {
+	let aName = a["name"];
+	if(!aName)
+		return 0;
+	let bName = b["name"];
+	if(!bName)
+		return 0;
+	return ("" + aName).localeCompare(bName);
 }
 
 // Text Escaping
