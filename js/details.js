@@ -59,7 +59,7 @@ function createBackIcon(type) {
 
 function getDetailsForPlugin() {
 	$.get({
-		url: "/PluginHub/plugins.json",
+		url: "/plugins.json",
 		success: onHubDataReceived,
 		error: onRequestError,
 		dataType: "json",

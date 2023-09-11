@@ -4,9 +4,8 @@ let statsData = {};
 let plugins = [];
 
 $(document).ready(function() {
-	const PluginHubUrl = "/PluginHub/plugins.json";
 	$.get({
-		url: PluginHubUrl,
+		url: "/plugins.json",
 		success: onHubDataReceived,
 		error: onRequestError,
 		dataType: "json",
