@@ -12,6 +12,7 @@ function onDocumentReady() {
 			if(type) {
 				pluginId = id;
 				pluginType = type;;
+				setupDomPurify();
 				createBackIcon(type);
 				getDetailsForPlugin()
 			} else {
@@ -23,6 +24,17 @@ function onDocumentReady() {
 	} else {
 		redirect404();
 	}
+}
+
+function setupDomPurify() {
+	DOMPurify.addHook("uponSanitizeElement", (node, data, config) => {
+		if (data.tagName === "iframe") {
+			const src = node.getAttribute("src") || "";
+			if (!src.startsWith("https://www.youtube.com/embed/")) {
+				return node.parentNode.removeChild(node);
+			}
+		}
+	});
 }
 
 function redirect404() {
@@ -100,7 +112,12 @@ function createIcon(src, alt, url) {
 function onReadmeReceived(data, textStatus, jqXHR) {
 	let converter = new showdown.Converter();
 	data = data.replace(/^\s*#.+/, ""); // Remove the title
-	$("#plugin-desc").html(converter.makeHtml(data));
+	let html = converter.makeHtml(data);
+	html = DOMPurify.sanitize(html, {
+		ADD_TAGS: ["iframe"],
+		ADD_ATTR: ["allow", "allowfullscreen", "frameborder", "scrolling"],
+	});
+	$("#plugin-desc").html(html);
 }
 
 function writeUi(pluginData, icon) {
