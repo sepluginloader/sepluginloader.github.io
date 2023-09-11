@@ -301,3 +301,21 @@ h1, h2, h3, h4, h5, h6 {
 .back-button img {
 	width: 60%;
 }
+
+
+/* tooltip */
+.tooltip-parent:hover ~ .tooltip {
+	display: block;
+	text-align: left;
+}
+
+.tooltip {
+	display: none;
+	position: absolute;
+	background: var(--highlight-color);
+	color: black;
+	margin-left: 20px;
+	padding: 5px;
+	z-index: 1000;
+	text-align: left;
+}

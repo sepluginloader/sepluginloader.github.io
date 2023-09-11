@@ -70,6 +70,7 @@ function getDetailsForPlugin() {
 function onHubDataReceived(data, textStatus, jqXHR) {
 	let pluginData = null;
 	let icon = null;
+	let modifedText = ""
 	switch (pluginType) {
 		case "plugin":
 			pluginData = data["plugins"];
@@ -79,10 +80,12 @@ function onHubDataReceived(data, textStatus, jqXHR) {
 				error: onRequestError,
 			});
 			icon = createIcon("/img/github.svg", "GitHub", `https://github.com/${pluginId}`);
+			modifedText = "Updated ";
 			break;
 		case "mod":
 			pluginData = data["mods"];
 			icon = createIcon("/img/steam.svg", "GitHub", `https://steamcommunity.com/workshop/filedetails/?id=${pluginId}`);
+			modifedText = "Added "; // Mods get updates via steam, not the hub
 			break;
 		default:
 			break;
@@ -91,7 +94,7 @@ function onHubDataReceived(data, textStatus, jqXHR) {
 	if(pluginData) {
 		pluginData = pluginData.find(x => x["id"] == pluginId);
 		if(pluginData) {
-			writeUi(pluginData, icon);
+			writeUi(pluginData, icon, modifedText);
 			return;
 		}
 	}
@@ -120,7 +123,7 @@ function onReadmeReceived(data, textStatus, jqXHR) {
 	$("#plugin-desc").html(html);
 }
 
-function writeUi(pluginData, icon) {
+function writeUi(pluginData, icon, modifedText) {
 	$("#plugin-name").text(pluginData["name"]);
 	let desc = pluginData["description"];
 	if(!desc)
@@ -131,6 +134,14 @@ function writeUi(pluginData, icon) {
 	let author = pluginData["author"];
 	if(author)
 		$("#plugin-author").text("By " + author);
+
+	let unixTime = pluginData["modified"];
+	if(Number.isInteger(unixTime)) {
+		let date = new Date(unixTime * 1000);
+		$("#plugin-date .tooltip-parent").text(modifedText + ago(date));
+		$("#plugin-date .tooltip").text(date.toLocaleString());
+	}
+
 	$("#open-logo").append(icon);
 }
 
@@ -188,3 +199,41 @@ function escapeText(s)
 
 	return escapedText;
 }
+
+/* 
+NPM s-ago module 
+https://github.com/sebastiansandqvist/s-ago
+*/
+function formatAgo(diff, divisor, unit, past, future, isInTheFuture) {
+    var val = Math.round(Math.abs(diff) / divisor);
+    if (isInTheFuture)
+        return val <= 1 ? future : 'in ' + val + ' ' + unit + 's';
+    return val <= 1 ? past : val + ' ' + unit + 's ago';
+}
+var agoUnits = [
+    { max: 2760000, value: 60000, name: 'minute', past: 'a minute ago', future: 'in a minute' },
+    { max: 72000000, value: 3600000, name: 'hour', past: 'an hour ago', future: 'in an hour' },
+    { max: 518400000, value: 86400000, name: 'day', past: 'yesterday', future: 'tomorrow' },
+    { max: 2419200000, value: 604800000, name: 'week', past: 'last week', future: 'in a week' },
+    { max: 28512000000, value: 2592000000, name: 'month', past: 'last month', future: 'in a month' } // max: 11 months
+];
+function ago(date, max) {
+    var diff = Date.now() - date.getTime();
+    // less than a minute
+    if (Math.abs(diff) < 60000)
+        return 'just now';
+    for (var i = 0; i < agoUnits.length; i++) {
+        if (Math.abs(diff) < agoUnits[i].max || (max && agoUnits[i].name === max)) {
+            return formatAgo(diff, agoUnits[i].value, agoUnits[i].name, agoUnits[i].past, agoUnits[i].future, diff < 0);
+        }
+    }
+    // `year` is the final unit.
+    // same as:
+    //  {
+    //    max: Infinity,
+    //    value: 31536000000,
+    //    name: 'year',
+    //    past: 'last year'
+    //  }
+    return formatAgo(diff, 31536000000, 'year', 'last year', 'in a year', diff < 0);
+};

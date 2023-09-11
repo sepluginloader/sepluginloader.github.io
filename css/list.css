@@ -44,23 +44,6 @@
 	font-style: italic;
 }
 
-/* tooltip */
-.tooltip-parent:hover ~ .tooltip {
-	display: block;
-	text-align: left;
-}
-
-.tooltip {
-	display: none;
-	position: absolute;
-	background: var(--highlight-color);
-	color: black;
-	margin-left: 20px;
-	padding: 5px;
-	z-index: 1000;
-	text-align: left;
-}
-
 /* Search */
 #search-box {
 	width: 100%;

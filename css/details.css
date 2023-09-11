@@ -10,6 +10,11 @@ pre {
 	padding: 40px;
 }
 
+#plugin-date {
+	display: flex;
+	justify-content: center;
+}
+
 #plugin-desc a {
 	text-decoration: underline;
 }
