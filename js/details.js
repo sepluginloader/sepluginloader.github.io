@@ -127,6 +127,10 @@ function writeUi(pluginData, icon) {
 		desc = pluginData["tooltip"];
 	if(desc)
 		$("#plugin-desc").html(escapeText(desc));
+
+	let author = pluginData["author"];
+	if(author)
+		$("#plugin-author").text("By " + author);
 	$("#open-logo").append(icon);
 }
 
