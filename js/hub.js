@@ -58,7 +58,6 @@ function createPluginObject(data, listRoot, type) {
 	let div = $(document.createElement("a"));
 	div.attr("href", `/hub/details?type=${type}&id=${encodeURIComponent(data["id"])}`)
 	div.addClass("plugin");
-	div.addClass("tooltip-parent");
 	
 	if(!createListElements(data, div))
 		return;
@@ -75,6 +74,7 @@ function createListElements(data, div) {
 	if(data["name"]) {
 		let name = $(document.createElement("div"));
 		name.addClass("plugin-name");
+		name.addClass("tooltip-parent");
 		name.text(data["name"]);
 		div.append(name);
 		pluginObject.name = data["name"];
@@ -86,6 +86,7 @@ function createListElements(data, div) {
 	if(data["author"]) {
 		let author = $(document.createElement("div"));
 		author.addClass("plugin-author");
+		author.addClass("tooltip-parent");
 		author.text("By " + data["author"]);
 		div.append(author);
 	}

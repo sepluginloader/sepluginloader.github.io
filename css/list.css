@@ -45,7 +45,7 @@
 }
 
 /* tooltip */
-.tooltip-parent:hover .tooltip {
+.tooltip-parent:hover ~ .tooltip {
 	display: block;
 	text-align: left;
 }
@@ -60,8 +60,6 @@
 	z-index: 1000;
 	text-align: left;
 }
-
-/* details menu */
 
 /* Search */
 #search-box {
