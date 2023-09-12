@@ -33,6 +33,14 @@ function setupDomPurify() {
 			if (!src.startsWith("https://www.youtube.com/embed/")) {
 				return node.parentNode.removeChild(node);
 			}
+		} else if (data.tagName === "a") {
+			let realHref = node.getAttribute("href") || "";
+			if(node.host === location.host && !realHref.includes(location.host) && !realHref.startsWith("#")) {
+				if(realHref.startsWith("/"))
+					node.href = `https://github.com/${pluginId}/blob/master${realHref}`
+				else
+					node.href = `https://github.com/${pluginId}/blob/master/${realHref}`
+			}
 		}
 	});
 }
