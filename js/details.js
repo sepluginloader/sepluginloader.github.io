@@ -11,7 +11,7 @@ function onDocumentReady() {
 			let type = urlParams.get("type");
 			if(type) {
 				pluginId = id;
-				pluginType = type;;
+				pluginType = type;
 				setupDomPurify();
 				createBackIcon(type);
 				getDetailsForPlugin()
@@ -125,6 +125,16 @@ function onReadmeReceived(data, textStatus, jqXHR) {
 
 function writeUi(pluginData, icon, modifedText) {
 	$("#plugin-name").text(pluginData["name"]);
+
+	switch (pluginType) {
+		case "plugin":
+			document.title = "Plugin - " + pluginData["name"];
+			break;
+		case "mod":
+			document.title = "Mod - " + pluginData["name"];
+			break;
+	}
+
 	let desc = pluginData["description"];
 	if(!desc)
 		desc = pluginData["tooltip"];
