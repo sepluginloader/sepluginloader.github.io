@@ -10,6 +10,10 @@
 	gap: 10px;
 }
 
+.plugin-list a {
+	text-decoration: none;
+}
+
 .plugin-list .plugin {
 	max-width: 400px;
 	min-width: 100px;

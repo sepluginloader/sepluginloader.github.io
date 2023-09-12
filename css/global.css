@@ -35,8 +35,11 @@ body {
 }
 
 a {
-	text-decoration: none;
 	color: var(--text-color);
+}
+
+.header a {
+	text-decoration: none;
 }
 
 .header {
