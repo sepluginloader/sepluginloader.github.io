@@ -10,7 +10,6 @@ $(document).ready(function() {
 		error: onRequestError,
 		dataType: "json",
 	});
-	$("#search-box").on("input", onSearchEntered);
 });
 
 function onHubDataReceived(data, textStatus, jqXHR) {
@@ -27,27 +26,47 @@ function makeUi() {
 	if(!hubData)
 		return;
 
+	let dataType = "plugin";
 	let listRoot = $("#plugin-list");
-	if (listRoot) {
-		let plugins = hubData["plugins"];
-		if(plugins) {
-			plugins.sort(sortPlugins);
-			for (let key in plugins) {
-				createPluginObject(plugins[key], listRoot, "plugin");
+	let dataRoot;
+	if(listRoot.length > 0) {
+		dataRoot = hubData["plugins"];
+	} else {
+		listRoot = $("#client-mods");
+		if(listRoot.length <= 0)
+			return;
+		dataType = "mod";
+		dataRoot = hubData["mods"];
+	}
+	
+	if(dataRoot) {
+		let search = $("#search-box");
+		search.on("input", onSearchEntered);
+
+		plugins.sort(sortPlugins);
+		for (let key in dataRoot) {
+			createPluginObject(dataRoot[key], listRoot, dataType);
+		}
+
+		if(isFromDetails(dataType) || isPageRefresh()) {
+			let storedSearch = sessionStorage.getItem("search");
+			if(storedSearch) {
+				search.val(storedSearch);
+				onSearchEntered();
 			}
+		} else {
+			sessionStorage.removeItem("search");
 		}
 	}
 
-	listRoot = $("#client-mods");
-	if (listRoot) {
-		let mods = hubData["mods"];
-		if(mods) {
-			mods.sort(sortPlugins);
-			for (let key in mods) {
-				createPluginObject(mods[key], listRoot, "mod");
-			}
-		}
-	}
+}
+
+function isPageRefresh() {
+	return performance.getEntriesByType("navigation").map(x => x.type).includes("reload");
+}
+
+function isFromDetails(pluginType) {
+	return document.referrer.startsWith(location.origin + `/hub/details?type=${pluginType}`);
 }
 
 function createPluginObject(data, listRoot, type) {
@@ -109,6 +128,7 @@ function createListElements(data, div) {
 
 function onSearchEntered() {
 	let search = $("#search-box").val();
+	sessionStorage.setItem("search", search);
 	let filter = null;
 	if(typeof search === "string")
 		filter = search.toUpperCase().split(/ +/);
