@@ -25,6 +25,21 @@
 			<script src="{{ js_file }}"></script>
 		{% endfor %}
 	{% endif %}
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:image" content="{{ site.url }}/img/android-chrome-512x512.png">
+	<meta property="og:url" content="{{ page.url | absolute_url }}">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="{{ page.title }}">
+	<meta name="twitter:image" content="{{ site.url }}/img/android-chrome-512x512.png">
+
+	{% if page.description %}
+		<meta content="{{ page.description }}" property="og:description">
+		<meta property="twitter:description" content="{{ page.description }}">
+	{% endif %}
+
 </head>
 <body>
 	<header class="header">

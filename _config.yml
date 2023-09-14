@@ -8,6 +8,10 @@ exclude:
   - "vendor/ruby/"
   - "PluginHub/Plugins/"
 
+title: SE Plugin Loader
+description: A tool to load plugins for Space Engineers automatically
+permalink: /:categories/:title
+
 defaults:
   -
     scope:
