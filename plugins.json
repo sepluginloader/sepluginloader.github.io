@@ -766,13 +766,6 @@
       "modified": 1637463068
     },
     {
-      "id": "2871017418",
-      "name": "Improved Rendering",
-      "author": "???",
-      "description": "A mod used to improve rendering. This item includes, improved post-processing, cool sun flares, less-saturated overall image, dark and blue skybox and a bright blue star.",
-      "modified": 1670252073
-    },
-    {
       "id": "2940288034",
       "name": "Korean Font for RichHudMaster",
       "author": "Arstraea",
@@ -861,6 +854,13 @@
       "author": "StarCpt",
       "description": "This mod adds a couple buttons and stuff to easily save and load projector profiles",
       "modified": 1670877402
+    },
+    {
+      "id": "2933216135",
+      "name": "Rendering Improved",
+      "author": "SEModder4",
+      "description": "A mod used to improve rendering. This item includes, improved post-processing, cool sun flares, less-saturated overall image, dark and blue skybox and a bright blue star.",
+      "modified": 1670252073
     },
     {
       "id": "1289657379",
