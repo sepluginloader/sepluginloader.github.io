@@ -78,7 +78,7 @@ function getDetailsForPlugin() {
 function onHubDataReceived(data, textStatus, jqXHR) {
 	let pluginData = null;
 	let icon = null;
-	let modifedText = ""
+	let modifiedText = ""
 	switch (pluginType) {
 		case "plugin":
 			pluginData = data["plugins"];
@@ -88,12 +88,12 @@ function onHubDataReceived(data, textStatus, jqXHR) {
 				error: onRequestError,
 			});
 			icon = createIcon("/img/github.svg", "GitHub", `https://github.com/${pluginId}`);
-			modifedText = "Updated ";
+			modifiedText = "Updated ";
 			break;
 		case "mod":
 			pluginData = data["mods"];
 			icon = createIcon("/img/steam.svg", "GitHub", `https://steamcommunity.com/workshop/filedetails/?id=${pluginId}`);
-			modifedText = "Added "; // Mods get updates via steam, not the hub
+			modifiedText = "Added "; // Mods get updates via steam, not the hub
 			break;
 		default:
 			break;
@@ -102,7 +102,7 @@ function onHubDataReceived(data, textStatus, jqXHR) {
 	if(pluginData) {
 		pluginData = pluginData.find(x => x["id"] == pluginId);
 		if(pluginData) {
-			writeUi(pluginData, icon, modifedText);
+			writeUi(pluginData, icon, modifiedText);
 			return;
 		}
 	}
@@ -131,7 +131,7 @@ function onReadmeReceived(data, textStatus, jqXHR) {
 	$("#plugin-desc").html(html);
 }
 
-function writeUi(pluginData, icon, modifedText) {
+function writeUi(pluginData, icon, modifiedText) {
 	$("#plugin-name").text(pluginData["name"]);
 
 	switch (pluginType) {
@@ -156,11 +156,19 @@ function writeUi(pluginData, icon, modifedText) {
 	let unixTime = pluginData["modified"];
 	if(Number.isInteger(unixTime)) {
 		let date = new Date(unixTime * 1000);
-		$("#plugin-date .tooltip-parent").text(modifedText + ago(date));
+		$("#plugin-date .tooltip-parent").text(modifiedText + ago(date));
 		$("#plugin-date .tooltip").text(date.toLocaleString());
 	}
 
-	$("#open-logo").append(icon);
+	let logoBin = $("#open-logo");
+	logoBin.append(icon);
+	let filePath = pluginData["file"];
+	if(filePath) {
+		if(!filePath.startsWith("/"))
+			filePath = "/" + filePath;
+		filePath = filePath.replace("\\", "/");
+		logoBin.append(createIcon("/img/edit.svg", "Edit", `https://github.com/sepluginloader/PluginHub/blob/main${filePath}`))
+	}
 }
 
 function onRequestError(jqXHR, textStatus, errorThrown) {
