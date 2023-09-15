@@ -91,7 +91,7 @@
       "name": "Camera LCD",
       "author": "avaness",
       "tooltip": "An experimental plugin that allows a camera to be displayed on an LCD screen.",
-      "description": "An *experimental* plugin that allows a camera to be displayed on an LCD screen.\nKnown Issues:\n- Doesnt work on screens rotated 90 or 270 degrees\n- All screens except for the transparent lcd render the camera without any brightness\n- Lighting issues\n- LCD script mode may need to be switched to something else and back in order for the camera selection to work",
+      "description": "An *experimental* plugin that allows a camera to be displayed on an LCD screen.\nKnown Issues:\n- Doesnt work on screens rotated 90 or 270 degrees\n- All screens except for the transparent lcd render the camera without any brightness\n- Lighting issues\n- LCD script mode may need to be switched to something else and back in order for the camera selection to work\n  \nTo use, set the LCD to Script mode and then select Camera Display in the list. You must also put the name of the camera in the LCD or cockpit Custom Data. To specify a specific screen, use [Index]:[CameraName] example: 1:Camera. The index starts at 0, so the second display in the list is index 1. To adjust settings of the plugin, use /cameralcd in chat open the settings menu.",
       "hidden": "true",
       "modified": 1684722229
     },
