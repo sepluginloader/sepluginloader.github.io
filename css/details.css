@@ -3,19 +3,19 @@ pre {
 	padding: 1em 10px;
 }
 
-#plugin-desc {
+.desc {
 	border: 1px solid var(--content-border-color);
 	background-color: var(--content-bg-color);
 	border-radius: 20px;
 	padding: 40px;
 }
 
-#plugin-desc h1, 
-#plugin-desc h2, 
-#plugin-desc h3, 
-#plugin-desc h4, 
-#plugin-desc h5, 
-#plugin-desc h6 {
+.desc h1, 
+.desc h2, 
+.desc h3, 
+.desc h4, 
+.desc h5, 
+.desc h6 {
 	text-align: left;
 }
 

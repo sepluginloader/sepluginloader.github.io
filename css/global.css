@@ -323,3 +323,42 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 1000;
 	text-align: left;
 }
+
+/* Expandable */
+.expandable-parent {
+	display: none;
+}
+.expandable-parent + label + .expandable {
+	transition: opacity 80ms ease-out, max-height 100ms linear, padding 100ms ease-out;
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+}
+.expandable-parent:not(:checked) + label + .expandable {
+	padding: 0;
+}
+.expandable-parent:checked + label + .expandable {
+	max-height: 1000px;
+	opacity: 1;
+}
+@media (prefers-color-scheme: dark) {
+	.expandable-parent + label img {
+		filter: invert()
+	}
+}
+.expandable-parent + label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.expandable-parent + label img {
+	height: 38px;
+	margin: 0;
+	transition: transform 100ms ease-out;
+}
+.expandable-parent + label:hover {
+	cursor: pointer;
+}
+.expandable-parent:not(:checked) + label img {
+	transform: rotate(-90deg);
+}

@@ -128,7 +128,10 @@ function onReadmeReceived(data, textStatus, jqXHR) {
 		ADD_TAGS: ["iframe"],
 		ADD_ATTR: ["allow", "allowfullscreen", "frameborder", "scrolling"],
 	});
-	$("#plugin-desc").html(html);
+	$("#plugin-desc-2-label").removeClass("hidden");
+	let desc = $("#plugin-desc");
+	$("#plugin-desc-2").html(desc.html())
+	desc.html(html);
 }
 
 function writeUi(pluginData, icon, modifiedText) {
