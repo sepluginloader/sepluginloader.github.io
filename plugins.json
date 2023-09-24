@@ -474,7 +474,7 @@
       "author": "Viktor",
       "tooltip": "Various performance improvements to let the game run smoother.",
       "description": "Please see the GitHub page for the features, technical details and the Keen bug tickets to vote on. This plugin is available for Torch and Dedicated Server as well.\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nThank you!\n  ",
-      "modified": 1694885675,
+      "modified": 1695544315,
       "file": "Plugins/PerformanceImprovements.xml"
     },
     {
