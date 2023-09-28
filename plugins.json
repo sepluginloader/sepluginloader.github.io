@@ -886,6 +886,16 @@
       "file": "Plugins/Mods/koKRFontForTextHudAPI.xml"
     },
     {
+      "id": "3027776990",
+      "name": "Larson's Sensible Scrolling",
+      "author": "LarsonStole",
+      "tooltip": "Alters the scrolling of some block types so that they more sense when building",
+      "description": "This has annoyed me for nearly all of my 3600 hours of game time, but when I heard Splitsie complain about it on his RVs at War stream, I finally felt 'not alone' in my aggravation and decided to fix it.\n\nThis mod simply alters the scrolling of two block types (in both light and heavy armors) in order to make them make more sense when building; The 2x1x1 corner group and the transitions group.",
+      "hidden": "false",
+      "modified": 1695909721,
+      "file": "Plugins/Mods/SensibleScrolling.xml"
+    },
+    {
       "id": "1169829560",
       "name": "Less Drill Dust and Stone Particles",
       "author": "Nikolas March",
