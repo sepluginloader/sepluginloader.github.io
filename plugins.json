@@ -55,6 +55,15 @@
       "file": "Plugins/AutoRemoveStone.xml"
     },
     {
+      "id": "Bushfiend/BallTurretHelper",
+      "name": "Ball Turret Helper",
+      "author": "Bushy",
+      "tooltip": "Adds a custom control to the large grid hinge block.",
+      "description": "Adds a custom control to the large grid hinge block that will autoplace and attach the smallest top part, useful for compact custom turrets. In Survival you will require a steel plate in your inventory for the part to be placed.",
+      "modified": 1695693147,
+      "file": "Plugins/BallTurretHelper.xml"
+    },
+    {
       "id": "austinvaness/BetterInventorySearch",
       "name": "Better Inventory Search",
       "author": "avaness",
