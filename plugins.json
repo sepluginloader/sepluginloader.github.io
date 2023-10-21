@@ -797,6 +797,16 @@
       "file": "Plugins/Mods/EasyProgrammableBlockButtons.xml"
     },
     {
+      "id": "2212516940",
+      "name": "Emissive Colors - Red / Green Color Vision Deficiency",
+      "author": "enenra",
+      "tooltip": "Changes the emissive colors of all blocks to allow people with Red / Green Color Vision Deficiencies to better differentiate between them.",
+      "description": "This mod changes the emissive colors of all blocks to allow people with Red / Green Color Vision Deficiencies to better differentiate between them.\n\nFeatures\n- Green was changed to have more blue, resulting in a teal-adjacent color.\n- Yellow status indicators were changed to orange.\n- Orange status indicators were chagned to yellow.\n\nNotes\n- This was made specifically for w4stedspace and his particular CVD but I felt it might be beneficial for other people as well.\n  ",
+      "hidden": "false",
+      "modified": 1697919944,
+      "file": "Plugins/Mods/EmissiveColors.xml"
+    },
+    {
       "id": "2950011596",
       "name": "Flight Vector",
       "author": "BDCarrillo",
