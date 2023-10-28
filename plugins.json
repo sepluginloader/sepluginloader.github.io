@@ -1014,6 +1014,16 @@
       "file": "Plugins/Mods/ScreenGunkBeGone.xml"
     },
     {
+      "id": "3062279989",
+      "name": "SgmHud",
+      "author": "Soulbinder",
+      "tooltip": "Experimental HUD additions.",
+      "description": "Project to learn to create new client side HUD elements. This project is experimental and for now only for personal use.",
+      "hidden": "true",
+      "modified": 1698452878,
+      "file": "Plugins/Mods/SgmHud.xml"
+    },
+    {
       "id": "2907163289",
       "name": "Silent Suit",
       "author": "Walto",
