@@ -721,6 +721,14 @@
       "file": "Plugins/Mods/BuildInfo_BleedingEdge.xml"
     },
     {
+      "id": "1697184408",
+      "name": "Build Vision",
+      "author": "DarkHelmet",
+      "tooltip": "This is a quick access context menu designed to supplement the game's terminal. *Requires Rich HUD Master.*",
+      "modified": 1699725197,
+      "file": "Plugins/Mods/BuildVision.xml"
+    },
+    {
       "id": "540223802",
       "name": "Caldari Skybox",
       "author": "Stone Cold Jane Austen",
@@ -1003,6 +1011,14 @@
       "description": "A mod used to improve rendering. This item includes, improved post-processing, cool sun flares, less-saturated overall image, dark and blue skybox and a bright blue star.",
       "modified": 1670252073,
       "file": "Plugins/Mods/ImprovedRendering.xml"
+    },
+    {
+      "id": "1965654081",
+      "name": "Rich HUD Master",
+      "author": "DarkHelmet",
+      "tooltip": "UI Framework dependency required by some mods.",
+      "modified": 1699725197,
+      "file": "Plugins/Mods/RichHudMaster.xml"
     },
     {
       "id": "1289657379",
