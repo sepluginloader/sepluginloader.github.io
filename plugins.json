@@ -396,7 +396,7 @@
       "author": "Casimir",
       "tooltip": "Allows transferring between Nexus-enabled servers seamlessly",
       "description": "This plugin allows seamless transfers between Nexus enabled servers. Some mods or plugins may not play nice with switching between servers. Be cautious when using!",
-      "modified": 1702780706,
+      "modified": 1702855240,
       "file": "Plugins/SeamlessClient.xml"
     },
     {
