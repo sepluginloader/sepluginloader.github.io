@@ -391,12 +391,12 @@
       "file": "Plugins/MultigridProjector.xml"
     },
     {
-      "id": "Casimir255/NexusSeamlessClientPlugin",
-      "name": "NexusSeamlessClient",
+      "id": "Casimir255/SeamlessClient",
+      "name": "Nexus Seamless Switcher",
       "author": "Casimir",
-      "tooltip": "Allows transferring between Nexus enabled servers seamlessly",
+      "tooltip": "Allows transferring between Nexus-enabled servers seamlessly",
       "description": "This plugin allows seamless transfers between Nexus enabled servers. Some mods or plugins may not play nice with switching between servers. Be cautious when using!",
-      "modified": 1693519344,
+      "modified": 1702780706,
       "file": "Plugins/SeamlessClient.xml"
     },
     {
