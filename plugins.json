@@ -607,6 +607,15 @@
       "file": "Plugins/SpawnScreenFix.xml"
     },
     {
+      "id": "StalkR/Space-Engineers-Timeout-Fix",
+      "name": "Timeout Fix",
+      "author": "rexxar",
+      "tooltip": "Fix the \"server is not responding\" error.",
+      "description": "This plugin fixes the \"server is not responding\" error.",
+      "modified": 1703757996,
+      "file": "Plugins/TimeoutFix.xml"
+    },
+    {
       "id": "austinvaness/ToolSwitcherPlugin",
       "name": "Tool Switcher",
       "author": "avaness",
