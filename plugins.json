@@ -911,6 +911,14 @@
       "file": "Plugins/Mods/HudLcd.xml"
     },
     {
+      "id": "3125206981",
+      "name": "InvalidsAlternateUISound",
+      "author": "Invalid",
+      "tooltip": "Various edits to extremely common UI sounds you've heard hundreds of thousands of times.",
+      "modified": 1703799461,
+      "file": "Plugins/Mods/InvalidsAlternateUISound.xml"
+    },
+    {
       "id": "2940288034",
       "name": "Korean Font for RichHudMaster",
       "author": "Arstraea",
