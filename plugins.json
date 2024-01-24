@@ -522,6 +522,15 @@
       "file": "Plugins/RDR2DeathScreen.xml"
     },
     {
+      "id": "StarCpt/SE-RealisticSoundToggle",
+      "name": "Realistic Sound Toggle",
+      "author": "StarCpt",
+      "tooltip": "Toggle realistic sound for servers",
+      "description": "Toggles realistic sound for servers. Plugin config can only be changed while on the main menu.",
+      "modified": 1706094242,
+      "file": "Plugins/RealisticSoundToggle.xml"
+    },
+    {
       "id": "WesternGamer/RemoveIntroVideoPlugin",
       "name": "Remove Intro Video Plugin",
       "author": "WesternGamer",
