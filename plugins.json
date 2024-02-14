@@ -694,6 +694,15 @@
       "description": "Adds support for analog control of the character, space ships, and rovers in singleplayer and multiplayer games. It also affects programmable blocks, where the values can be accessed through IMyShipController.MoveIndicator as normal but the values are much more analog. The controls can be set as usual in the game options.\n\nThere is an issue in the Wooting SDK that affects the arrow keys. When testing with a Wooting Two (the one with Flaretech switches), binding any movement action to the arrow keys would look right in the settings menu but it would be bound to the numpad in game. It will hopefully be fixed in a future version of the Wooting SDK.\n\nThere is also an issue with wheels and analog controls. The brakes and throttle are treated as digital (on/off), affecting the Wooting and other controllers alike. I have made another plugin, Analog Wheel Control (SEAnalogWheels), that addresses this issue until Keen fixes it.",
       "modified": 1693869212,
       "file": "Plugins/WootingPlugin.xml"
+    },
+    {
+      "id": "raylavaldez/Zoom",
+      "name": "Zoom",
+      "author": "Rayla Valdez",
+      "tooltip": "Zoom plugin, for zooming",
+      "description": "\nPlugin that allows for dynamic zooming for getting a peek at that pesky ship closing in.\n    \nCredits go to Github user 'Math0424' for creating ScrollableFOV and then not including a config screen.\n  ",
+      "modified": 1707785075,
+      "file": "Plugins/Zoom.xml"
     }
   ],
   "mods": [
