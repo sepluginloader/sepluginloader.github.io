@@ -701,7 +701,7 @@
       "author": "Rayla Valdez",
       "tooltip": "Zoom plugin, for zooming",
       "description": "\nPlugin that allows for dynamic zooming for getting a peek at that pesky ship closing in.\n    \nCredits go to Github user 'Math0424' for creating ScrollableFOV and then not including a config screen.\n  ",
-      "modified": 1707785075,
+      "modified": 1707945531,
       "file": "Plugins/Zoom.xml"
     }
   ],
