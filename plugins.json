@@ -826,6 +826,15 @@
       "file": "Plugins/Mods/ColorfulRendering.xml"
     },
     {
+      "id": "3163821667",
+      "name": "Conveyor Diagram",
+      "author": "BDCarrillo",
+      "tooltip": "Conveyor diagram- see conveyor lines, junctions, and xray views through friendly ships.",
+      "description": "Conveyor connectivity diagram and grid xray view toggled by left shift.  Options and rebinds can be seen by typing \"/cd help\" in chat.",
+      "modified": 1708845683,
+      "file": "Plugins/Mods/ConveyorDiagram.xml"
+    },
+    {
       "id": "2538074869",
       "name": "Deep Space 4K - Weather fix",
       "author": "Habibu",
