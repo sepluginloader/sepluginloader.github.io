@@ -994,6 +994,14 @@
       "file": "Plugins/Mods/SensibleScrolling.xml"
     },
     {
+      "id": "3170315974",
+      "name": "Leak Finder",
+      "author": "Digi",
+      "tooltip": "Shows a path leading to the exterior of the ship while respecting airtight sides.\nThis helps find air leaks preventing pressurization.\nTo use it, open terminal of any Air Vent block.",
+      "modified": 1709195520,
+      "file": "Plugins/Mods/LeakFinder.xml"
+    },
+    {
       "id": "1169829560",
       "name": "Less Drill Dust and Stone Particles",
       "author": "Nikolas March",
