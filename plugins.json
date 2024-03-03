@@ -514,6 +514,15 @@
       "file": "Plugins/PreventBlockResize.xml"
     },
     {
+      "id": "mleise/SE.Plugin.ProjectedLights",
+      "name": "Projected Lights",
+      "author": "Streuwinkel",
+      "tooltip": "Turns point lights into projected lights.",
+      "description": "This plugin gives interior light class blocks a projected texture like the spotlights have.\n\nYou can change their texture and make individual lights cast shadows. There are sliders added to interior light class blocks for that. Any changes from the default are stored as an INI section in the Custom Data of the light. I may change what the defaults will provide and what settings are available in the future, so don't rely too much on it as a permanent solution.\n\nThere is a performance cost to these lights. Keen originally limited them to 32 with at most 4 of them casting shadows. The shadow limit is still 4, but there can be any number of spotlights now.\n\nThere can be glitches in particular when turning the plugin modifications off for many lights in a group operation.",
+      "modified": 1709423111,
+      "file": "Plugins/ProjectedLights.xml"
+    },
+    {
       "id": "WesternGamer/RDR2DeathScreen",
       "name": "RDR2 Death Screen",
       "author": "WesternGamer",
