@@ -116,6 +116,15 @@
       "file": "Plugins/BuildFreedom.xml"
     },
     {
+      "id": "viktor-ferenczi/se-camera-group",
+      "name": "Camera Group",
+      "author": "Viktor",
+      "tooltip": "Cycling cameras from a group with a toolbar button",
+      "description": "Allows viewing groups of cameras in a round-robin manner using only a single toolbar slot.\n\nMore information:\nhttps://github.com/viktor-ferenczi/se-camera-group\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nThank you!\n  ",
+      "modified": 1712355988,
+      "file": "Plugins/CameraGroup.xml"
+    },
+    {
       "id": "austinvaness/CameraLCD",
       "name": "Camera LCD",
       "author": "avaness",
@@ -124,15 +133,6 @@
       "hidden": "true",
       "modified": 1684722229,
       "file": "Plugins/CameraLCD.xml"
-    },
-    {
-      "id": "viktor-ferenczi/se-camera-group",
-      "name": "CameraGroup",
-      "author": "Viktor",
-      "tooltip": "Cycling cameras from a group with a toolbar button",
-      "description": "Allows viewing groups of cameras in a round-robin manner using only a single toolbar slot.\n\nMore information:\nhttps://github.com/viktor-ferenczi/se-camera-group\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nThank you!\n  ",
-      "modified": 1712355988,
-      "file": "Plugins/CameraGroup.xml"
     },
     {
       "id": "Allen-Wrench/ChatFilter",
