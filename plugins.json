@@ -1173,6 +1173,15 @@
       "file": "Plugins/Mods/SneakySounds.xml"
     },
     {
+      "id": "3214510627",
+      "name": "Sorter Config Reader",
+      "author": "Kaito",
+      "tooltip": "Configure Sorter filters from their Custom Data.",
+      "description": "\n    This mod adds a button to the terminal controls of sorters to read the filter configuration from Custom Data.\n\n    Usage\n\n    The mod code runs every 100 ticks. Any Sorter with config in Custom Data as shown below will get configured automatically. The parsing only runs if the Custom Data has changed, so there is no continued performance cost.\n\n    [SorterConfig]\n    mode = blacklist\n    filters =\n    |Ore/Stone\n    |Ore/Iron\n    |Component/SteelPlate\n  ",
+      "modified": 1712430393,
+      "file": "Plugins/Mods/SorterConfigReader.xml"
+    },
+    {
       "id": "1136188499",
       "name": "Space Just Got Real",
       "author": "Dr. Novikov",
