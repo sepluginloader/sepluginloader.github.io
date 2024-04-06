@@ -735,7 +735,7 @@
   "mods": [
     {
       "id": "2137637584",
-      "name": "(ARMCO) Starwars Rendering (Mod)",
+      "name": "(ARMCO) Starwars Rendering",
       "author": "Kreeg",
       "tooltip": "Provides Renderer Modifications, to enhance Visuals for the game.",
       "description": "This mod is designed to allow the Project to enhance visuals and create that Starwars Space Environment, while also improving interaction visuals.",
@@ -868,6 +868,16 @@
       "tooltip": "High Resolution Realistic Skybox!",
       "modified": 1637463068,
       "file": "Plugins/Mods/DeepSpace4K.xml"
+    },
+    {
+      "id": "2773303518",
+      "name": "Dune Jump Effect",
+      "author": "Blues Hailfire",
+      "tooltip": "Changes the default jump effect to one inspired by the Dune Series",
+      "description": "Space folding (Dune), the specific portrayal of faster-than-light travel in Frank Herbert's Dune series. Space curvature due to gravity, a central aspect of the general theory of relativity. Space-time folding, a physical concept of non-flat spacetime, related to wormholes.",
+      "hidden": "false",
+      "modified": 1712087006,
+      "file": "Plugins/Mods/Dune Jump Effect.xml"
     },
     {
       "id": "2077166496",
@@ -1125,6 +1135,16 @@
       "tooltip": "UI Framework dependency required by some mods.",
       "modified": 1699725197,
       "file": "Plugins/Mods/RichHudMaster.xml"
+    },
+    {
+      "id": "2830474647",
+      "name": "Rotate skybox with the Sun",
+      "author": "Digi",
+      "tooltip": "Rotates your skybox with the sun.",
+      "description": "This simple mod makes it seem like you are the one rotating with the planets, instead of the sun rotating around you like it actually does, by simply rotating the skybox (starfield) with the sun. At very low sun rotation speeds (1h per day or longer) it is faint enough to just be a feeling rather than be noticeable. Not really recommended with fast sun speeds as it can induce motion sickness. And of course the mod does nothing if sun rotation is turned off. Will work with any skybox mods.",
+      "hidden": "false",
+      "modified": 1712091684,
+      "file": "Plugins/Mods/RotateSkyboxWithSun.xml"
     },
     {
       "id": "1289657379",
