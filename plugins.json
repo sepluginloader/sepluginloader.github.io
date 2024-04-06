@@ -760,6 +760,16 @@
       "file": "Plugins/Mods/Accelerometer.xml"
     },
     {
+      "id": "1668739492",
+      "name": "Animated Jump Drives",
+      "author": "Gwindalmir, SEModder4",
+      "tooltip": "Animated Jump Drives ingame.",
+      "description": "Do you think the jump drive is missing something? So did we. In conjunction with SEModder4, we have animated the jump drives!",
+      "hidden": "false",
+      "modified": 1712091943,
+      "file": "Plugins/Mods/AnimatedJumpDrive.xml"
+    },
+    {
       "id": "1878844801",
       "name": "AutoRun",
       "author": "Klime",
