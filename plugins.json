@@ -414,7 +414,7 @@
       "author": "Viktor",
       "tooltip": "Allows loading blueprints of multiple sub-grids into projectors and welding them.",
       "description": "This plugin allows to load blueprints of multiple sub-grids into projectors and welding the blocks. Head/base blocks are added automatically as needed to connect subgrids.\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nThank you!\n  ",
-      "modified": 1710888500,
+      "modified": 1712512099,
       "file": "Plugins/MultigridProjector.xml"
     },
     {
