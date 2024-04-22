@@ -291,6 +291,15 @@
       "file": "Plugins/GPSMarkerScaling.xml"
     },
     {
+      "id": "Pas2704/GridRenameFix",
+      "name": "Grid Rename Fix",
+      "author": "Pas2704",
+      "tooltip": "Stops the grid name from being updated in the info tab while it's open",
+      "description": "Tired of using !rename? \nThis plugin stops the grid name from being updated while the info tab is open, allowing it to be edited properly.",
+      "modified": 1713763618,
+      "file": "Plugins/GridRemameFix.xml"
+    },
+    {
       "id": "StarCpt/SE-GridFilter",
       "name": "GridFilter",
       "author": "Xo",
