@@ -238,6 +238,15 @@
       "file": "Plugins/FactionUnlimiter.xml"
     },
     {
+      "id": "WesternGamer/FasterLoadGameScreen",
+      "name": "Faster Load Game Screen",
+      "author": "WesternGamer",
+      "tooltip": "Makes the load game screen load faster.",
+      "description": "This plugin will make the load game screen load up the world list faster.\n\nThis plugin can be especially useful if you have many worlds on your computer.\n  ",
+      "modified": 1713745637,
+      "file": "Plugins/FasterLoadGameScreen.xml"
+    },
+    {
       "id": "WesternGamer/FileCleaner",
       "name": "File Cleaner",
       "author": "WesternGamer",
