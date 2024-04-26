@@ -99,15 +99,6 @@
       "file": "Plugins/PluginBlueprintAPI.xml"
     },
     {
-      "id": "viktor-ferenczi/se-bugfixes",
-      "name": "Bugfixes",
-      "author": "Viktor",
-      "tooltip": "Fixes various bugs and crashes",
-      "description": "Please see the detailed list on the GitHub page:\n\nhttps://github.com/viktor-ferenczi/se-bugfixes\n\n(scroll down)\n\nThey are also listed in the plugin settings dialog.\n  ",
-      "modified": 1681929139,
-      "file": "Plugins/Bugfixes.xml"
-    },
-    {
       "id": "KlimeSE/BuildFreedom",
       "name": "Build Freedom",
       "author": "Klime",
