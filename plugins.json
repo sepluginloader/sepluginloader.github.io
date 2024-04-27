@@ -111,7 +111,7 @@
       "name": "Camera Group",
       "author": "Viktor",
       "tooltip": "Allows cycling over groups of cameras, searchlights and turrets",
-      "description": "Allows cycling over groups of cameras, searchlights, turrets and turret controllers using a single toolbar button.\n\nConfiguration option to disable the third person view even if the world would allow for using that. This option is for increased realism and should only be used by experienced SE players.\n\n1. Group the relevant blocks (cameras, searchlights, turrets or turret controllers)\n2. Add the groups to the relevant cockpit or RC toolbar as a View or Control action\n3. Use the toolbar buttons to cycle through (view or control) the working blocks\n\nDo NOT group cameras with the other supported blocks. Cameras have a View action, while the searchlight and turrets have a Control action. They cannot be mixed.\n\nMore information:\nhttps://github.com/viktor-ferenczi/se-camera-group\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n  ",
+      "description": "Allows cycling over groups of cameras, searchlights, turrets and turret controllers using a single toolbar button.\n\nConfiguration option to disable the third person view even if the world would allow for using that. This option is for increased realism and should only be used by experienced SE players.\n\n1. Group the relevant blocks (cameras, searchlights, turrets or turret controllers)\n2. Add the groups to the relevant cockpit or RC toolbar as a View or Control action\n3. Use the toolbar buttons to cycle through (view or control) the working blocks\n\nDo NOT group cameras with the other supported blocks. Cameras have a View action, while the searchlight and turrets have a Control action. They cannot be mixed.\n\nMore information:\nhttps://github.com/viktor-ferenczi/se-camera-group\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nOne time support via PayPal:\nhttps://www.paypal.com/paypalme/vferenczi/\n\n  ",
       "modified": 1712980273,
       "file": "Plugins/CameraGroup.xml"
     },
@@ -422,7 +422,7 @@
       "name": "Multigrid Projector",
       "author": "Viktor",
       "tooltip": "Allows loading blueprints of multiple sub-grids into projectors and welding them.",
-      "description": "This plugin allows to load blueprints of multiple sub-grids into projectors and welding the blocks. Head/base blocks are added automatically as needed to connect subgrids.\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nThank you!\n  ",
+      "description": "This plugin allows to load blueprints of multiple sub-grids into projectors and welding the blocks. Head/base blocks are added automatically as needed to connect subgrids.\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nOne time support via PayPal:\nhttps://www.paypal.com/paypalme/vferenczi/\n\nThank you!\n  ",
       "modified": 1713948616,
       "file": "Plugins/MultigridProjector.xml"
     },
@@ -518,7 +518,7 @@
       "name": "Performance Improvements",
       "author": "Viktor",
       "tooltip": "Various performance improvements to let the game run smoother.",
-      "description": "Please see the GitHub page for the features, technical details and the Keen bug tickets to vote on. This plugin is available for Torch and Dedicated Server as well.\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nThank you!\n  ",
+      "description": "Please see the GitHub page for the features, technical details and the Keen bug tickets to vote on. This plugin is available for Torch and Dedicated Server as well.\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nOne time support via PayPal:\nhttps://www.paypal.com/paypalme/vferenczi/\n\nThank you!\n  ",
       "modified": 1712754211,
       "file": "Plugins/PerformanceImprovements.xml"
     },
@@ -622,7 +622,7 @@
       "name": "ScriptDev",
       "author": "Viktor",
       "tooltip": "Automatically updates the code in programmable blocks.",
-      "description": "This plugin automatically updates the code in programmable blocks whenever the corresponding Script.cs file changes.\n\nMore information:\nhttps://github.com/viktor-ferenczi/se-script-dev\n\nCompanion script merger and minifier tool:\nhttps://github.com/viktor-ferenczi/se-script-merge\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nThank you!\n  ",
+      "description": "This plugin automatically updates the code in programmable blocks whenever the corresponding Script.cs file changes.\n\nMore information:\nhttps://github.com/viktor-ferenczi/se-script-dev\n\nCompanion script merger and minifier tool:\nhttps://github.com/viktor-ferenczi/se-script-merge\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nOne time support via PayPal:\nhttps://www.paypal.com/paypalme/vferenczi/\n\nThank you!\n  ",
       "modified": 1711627165,
       "file": "Plugins/ScriptDev.xml"
     },
@@ -692,7 +692,7 @@
       "name": "Toolbar Manager",
       "author": "Viktor",
       "tooltip": "Allows saving and loading of character and block toolbars.",
-      "description": "Allows saving and loading of character and block toolbars. \nSpeed up your build by using a familiar toolbar layout, copy cockpits into remote control blocks and more. Allows copying toolbars between ships and games, identifies blocks by name (like named groups). Stores your toolbars locally, works with online multiplayer. \n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nThank you!\n  ",
+      "description": "Allows saving and loading of character and block toolbars. \nSpeed up your build by using a familiar toolbar layout, copy cockpits into remote control blocks and more. Allows copying toolbars between ships and games, identifies blocks by name (like named groups). Stores your toolbars locally, works with online multiplayer. \n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nOne time support via PayPal:\nhttps://www.paypal.com/paypalme/vferenczi/\n\nThank you!\n  ",
       "modified": 1714145233,
       "file": "Plugins/ToolbarManager.xml"
     },
