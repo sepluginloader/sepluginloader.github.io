@@ -670,6 +670,15 @@
       "file": "Plugins/SpawnScreenFix.xml"
     },
     {
+      "id": "dj8552/Store-GUI-Fix",
+      "name": "Store GUI Fix",
+      "author": "DJ8552",
+      "tooltip": "Fixes the rounding errors in the total price.",
+      "description": "\n  ",
+      "modified": 1714697395,
+      "file": "Plugins/StoreGUIFix.xml"
+    },
+    {
       "id": "StalkR/Space-Engineers-Timeout-Fix",
       "name": "Timeout Fix",
       "author": "rexxar",
