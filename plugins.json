@@ -675,7 +675,7 @@
       "author": "DJ8552",
       "tooltip": "Fixes the rounding errors in the total price.",
       "description": "\n  ",
-      "modified": 1714697395,
+      "modified": 1714934150,
       "file": "Plugins/StoreGUIFix.xml"
     },
     {
