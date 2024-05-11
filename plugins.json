@@ -806,6 +806,15 @@
       "file": "Plugins/Mods/BetterSpotlights.xml"
     },
     {
+      "id": "3237260730",
+      "name": "Block Culling (Mod)",
+      "author": "Aristeas",
+      "tooltip": "Makes fatblocks with blocks on all sides invisible. Boosts FPS upwards of 3x.",
+      "hidden": "false",
+      "modified": 1715387466,
+      "file": "Plugins/Mods/BlockCulling.xml"
+    },
+    {
       "id": "1475392343",
       "name": "Build Colors",
       "author": "Sisk",
