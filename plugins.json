@@ -315,6 +315,15 @@
       "file": "Plugins/HideIpAddress.xml"
     },
     {
+      "id": "WesternGamer/HideQuickStartButton",
+      "name": "Hide Quick Start Button",
+      "author": "WesternGamer",
+      "tooltip": "Plugin to hide the quick start button introduced in the 1.204 signals update.",
+      "description": "Plugin to hide the quick start button introduced in the 1.204 signals update.\n  ",
+      "modified": 1715632936,
+      "file": "Plugins/HideQuickStartButton.xml"
+    },
+    {
       "id": "WesternGamer/HideVersionString",
       "name": "Hide Version String",
       "author": "WesternGamer",
@@ -343,7 +352,7 @@
       "name": "In Game World Loading",
       "author": "WesternGamer",
       "tooltip": "Adds the ability to load, join, or start a new world from ingame.",
-      "modified": 1638495065,
+      "modified": 1715632172,
       "file": "Plugins/InGameWorldLoading.xml"
     },
     {
@@ -591,6 +600,15 @@
       "description": "This plugin adds a blank entry to the top of the respawn screen to avoid streaming in some random grid, and avoid purging replication.  Works with zznty's SpawnScreenFix and StarCpt's Respawn Screen Improvements\n  -Spawn points in sync will appear green\n  ",
       "modified": 1701041610,
       "file": "Plugins/RespawnScreenPerformance.xml"
+    },
+    {
+      "id": "WesternGamer/RevertNewGameScreen",
+      "name": "Revert New Game Screen",
+      "author": "WesternGamer",
+      "tooltip": "Plugin to revert the new game screen to the pre-1.204 version.",
+      "description": "Plugin to revert the new game screen to the pre-1.204 version.\n  ",
+      "modified": 1715633899,
+      "file": "Plugins/RevertNewGameScreen.xml"
     },
     {
       "id": "KlimeSE/SEVR",
