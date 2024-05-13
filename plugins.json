@@ -78,7 +78,7 @@
       "author": "avaness",
       "tooltip": "Highlights the item you searched for in the inventory.",
       "description": "Highlights the item you searched for in the inventory. Also tweaks the production tab so that the assembler list is sorterd and your search is persistent.",
-      "modified": 1647055877,
+      "modified": 1715638797,
       "file": "Plugins/BetterInventorySearch.xml"
     },
     {
