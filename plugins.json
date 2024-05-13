@@ -269,7 +269,7 @@
       "author": "StarCpt",
       "tooltip": "Folders in the GPS tab",
       "description": "Adds folders for the gps tab.\nTo add gpses to a folder, set a name in the Folder Name textbox.\nIt must be between 1 and 32 characters long, cannot contain colons and not be all whitespace characters.\nDO NOT delete or modify the folder information in the gps description.\nOther Features:\n- Column for gps distances from player (toggleable)\n- Copying and pasting whole folders if both people are using the plugin.\n- Show/Hide folders on hud\n- Double click on a folder to only browse its gpses\n- Button to copy all gpses to clipboard\n  \nVisit the github page for more information.",
-      "modified": 1697803377,
+      "modified": 1715623986,
       "file": "Plugins/GpsFolders.xml"
     },
     {
