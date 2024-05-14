@@ -282,6 +282,15 @@
       "file": "Plugins/GPSMarkerScaling.xml"
     },
     {
+      "id": "Pas2704/GrabSingleItem",
+      "name": "Grab Single Item",
+      "author": "Pas2704",
+      "tooltip": "Grab inventory items one at a time with Alt + Click",
+      "description": "Allows you to grab a single item in the terminal with Alt + click.\n  Particularly useful for grabbing tools and bottles, now that they're stacked.",
+      "modified": 1715701953,
+      "file": "Plugins/GrabSingleItem.xml"
+    },
+    {
       "id": "Pas2704/GridRenameFix",
       "name": "Grid Rename Fix",
       "author": "Pas2704",
