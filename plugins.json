@@ -1048,6 +1048,15 @@
       "file": "Plugins/Mods/HudLcd.xml"
     },
     {
+      "id": "2905820756",
+      "name": "Hydrogen Plus",
+      "author": "Blues Hailfire + Others",
+      "tooltip": "Allows you to change the color/effect of a hydrogen thruster",
+      "description": "\n    Made By: Shinobi, Blues Hailfire, Foltast, Dercaixr\n    Supports full RGB range for the thrusters color\n    Custom VFX made specifically for the hydrogen thrusters, including:\n      - AmberBurst\n      - Maneuvering\n      - Rainbow\n      - Blueshift\n      - ThunderDomn\n      - Eridanus\n      - HyperRX\n      - SkyBurner\n      - OPC Signature made by Dercaixr (OPC Thruster Exclusive)\n    Server friendly\n    Can be used on Nexus servers\n    Highly efficient, can be used even on potato\n    Setup via grid terminal\n  ",
+      "modified": 1715610183,
+      "file": "Plugins/Mods/HydrogenPlus.xml"
+    },
+    {
       "id": "3125206981",
       "name": "InvalidsAlternateUISound",
       "author": "Invalid",
