@@ -1006,6 +1006,16 @@
       "file": "Plugins/Mods/GPSHelper.xml"
     },
     {
+      "id": "3082595868",
+      "name": "GV Inventory Sorter",
+      "author": "Merii",
+      "tooltip": "Pure client-side inventory management",
+      "description": "This mod is a lot like Isy's Inventory Manager and uses a similar config language, but is entirely client side. There is no server load except the actual item transfers, unlike with programmable blocks.\n    \n    See https://steamcommunity.com/sharedfiles/filedetails/?id=3122025230 for usage",
+      "hidden": "false",
+      "modified": 1715883613,
+      "file": "Plugins/Mods/GVInventorySorter.xml"
+    },
+    {
       "id": "2626059962",
       "name": "HUD - Modern and Fancy",
       "author": "Adriano",
