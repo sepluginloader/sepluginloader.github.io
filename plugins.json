@@ -515,12 +515,12 @@
     },
     {
       "id": "THDigi/ParticleEditor",
-      "name": "Particle Editor 1.05",
+      "name": "Particle Editor 1.06",
       "author": "Digi",
       "tooltip": "A plugin to allow modders to develop particles much easier.",
       "description": "A plugin to allow modders to develop particles much easier.\n\nLoad any offline world and press Shift+F to open the editor then follow the tooltips all over.\n  ",
       "hidden": "false",
-      "modified": 1694016588,
+      "modified": 1716745393,
       "file": "Plugins/ParticleEditor.xml"
     },
     {
