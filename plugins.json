@@ -969,6 +969,14 @@
       "file": "Plugins/Mods/EasyProgrammableBlockButtons.xml"
     },
     {
+      "id": "3252520404",
+      "name": "Eli Dang's Holo HUD",
+      "author": "Polygon Cherub",
+      "tooltip": "Adds an elite dangerous style HUD to your ships",
+      "modified": 1617761110,
+      "file": "Plugins/Mods/EliteDangerousHud.xml"
+    },
+    {
       "id": "2212516940",
       "name": "Emissive Colors - Red / Green Color Vision Deficiency",
       "author": "enenra",
