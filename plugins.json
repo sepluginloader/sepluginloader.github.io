@@ -234,7 +234,7 @@
       "author": "WesternGamer",
       "tooltip": "Makes the load game screen load faster.",
       "description": "This plugin will make the load game screen load up the world list faster.\n\nThis plugin can be especially useful if you have many worlds on your computer.\n\n1.204+ - The plugin may improve load times of the new game screen.\n  ",
-      "modified": 1715653528,
+      "modified": 1717975918,
       "file": "Plugins/FasterLoadGameScreen.xml"
     },
     {
