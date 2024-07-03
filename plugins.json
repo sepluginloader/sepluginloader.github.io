@@ -815,6 +815,16 @@
       "file": "Plugins/Mods/AnimatedJumpDrive.xml"
     },
     {
+      "id": "3280614986",
+      "name": "Arch Jump Effect",
+      "author": "KesterKaster",
+      "tooltip": "Replaces the jump drive effect and audio with epic orthodox one.",
+      "description": "This mod replaces the vanilla jump effect with a giant white oblivion arch. It also adds several audio variations.",
+      "hidden": "false",
+      "modified": 1617761110,
+      "file": "Plugins/Mods/Arch Jump Effect.xml"
+    },
+    {
       "id": "1878844801",
       "name": "AutoRun",
       "author": "Klime",
