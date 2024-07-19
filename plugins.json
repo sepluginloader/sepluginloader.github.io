@@ -1077,6 +1077,16 @@
       "file": "Plugins/Mods/HudLcd.xml"
     },
     {
+      "id": "2005632342",
+      "name": "HudLcd v2 1/2 with Multi-screen blocks",
+      "author": "Kapitan Oczywisty",
+      "tooltip": "HudLcd displays the Text of selected LCDs on your HUD",
+      "description": "HudLcd displays the Text of selected LCDs on your HUD\n- Display multiple LCDs on your HUD\n- Configure Position, Fontsize and Colour!\n- Debug and Monospace font support (thanks to Text HUD API v2)\n- Support for multi-screen blocks: Cockpits, Programmable Blocks, Medical Rooms etc.\n- Dropped support of Title in favor of Name\n- Configuration options changed",
+      "hidden": "false",
+      "modified": 1617761110,
+      "file": "Plugins/Mods/HudLCDv2.xml"
+    },
+    {
       "id": "2905820756",
       "name": "Hydrogen Plus",
       "author": "Blues Hailfire + Others",
