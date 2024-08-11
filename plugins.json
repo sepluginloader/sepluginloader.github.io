@@ -374,6 +374,15 @@
       "file": "Plugins/InstantExit.xml"
     },
     {
+      "id": "thejoun/se-jetpack-gravity-alignment",
+      "name": "Jetpack Gravity Alignment",
+      "author": "thejoun",
+      "tooltip": "Jetpack yaw around gravity axis",
+      "description": "A simple plugin which addresses a UX/QoL/Accessibility issue that seems to have been reported many times since 2014. While using a jetpack in any grivity field, it makes the player yaw around the current gravity axis, as if he was standing on the ground.",
+      "modified": 1722799438,
+      "file": "Plugins/JetpackGravityAlignment.xml"
+    },
+    {
       "id": "Allen-Wrench/JumpSelector",
       "name": "Jump Selector",
       "author": "dude",
