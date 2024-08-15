@@ -379,7 +379,7 @@
       "author": "thejoun",
       "tooltip": "Jetpack yaw around gravity axis",
       "description": "By keeping a flying player aligned with current gravity, this plugin addresses a UX/QoL/Accessibility issue where turning to the sides while looking slighly up or down would make you immediately lose balance, potentially inducing nausea or just being inconvenient.",
-      "modified": 1723614251,
+      "modified": 1723695581,
       "file": "Plugins/JetpackGravityAlignment.xml"
     },
     {
