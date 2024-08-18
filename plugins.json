@@ -533,6 +533,15 @@
       "file": "Plugins/ParticleEditor.xml"
     },
     {
+      "id": "dj8552/Particle-Limit-Remover",
+      "name": "Particle Limit Remover",
+      "author": "DJ8552",
+      "tooltip": "Allows You To Alter The Particle Limit",
+      "description": "\n    Do \"/plr\" followed by an integer to change the limit.\n  ",
+      "modified": 1724016725,
+      "file": "Plugins/ParticleLimitEditor.xml"
+    },
+    {
       "id": "austinvaness/PasswordCachePlugin",
       "name": "Password Cache",
       "author": "avaness",
