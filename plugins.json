@@ -483,8 +483,8 @@
       "name": "No Forced Camera Zoom",
       "author": "dude",
       "tooltip": "3rd person camera freedom",
-      "description": "Removes the check for obstructions when using the 3rd person view while seated in a ship. \n    This allows you to rotate the camera around freely without it being forced to zoom in or out. \n    Great for tunnel-boring mining ships!\n  ",
-      "modified": 1693866097,
+      "description": "Removes the check for obstructions when using the 3rd person view while seated in a ship. \n    This allows you to rotate the camera around freely without it being forced to zoom in or out. \n    Great for tunnel-boring mining ships!\n    **New** Now you can offset the position that the camera rotates around to anywhere inside of your ships bounding box!\n    ** Hold Ctrl+Shift and use the block rotation keys to move the rotation point.\n  ",
+      "modified": 1727630891,
       "file": "Plugins/NoForcedCameraZoom.xml"
     },
     {
