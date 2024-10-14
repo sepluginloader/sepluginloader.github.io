@@ -625,7 +625,7 @@
       "author": "BDCarrillo",
       "tooltip": "Cut down on excessive streaming when respawning",
       "description": "This plugin adds a blank entry to the top of the respawn screen to avoid streaming in some random grid, and avoid purging replication.  Works with zznty's SpawnScreenFix and StarCpt's Respawn Screen Improvements\n  -Spawn points in sync will appear green\n  ",
-      "modified": 1701041610,
+      "modified": 1728925423,
       "file": "Plugins/RespawnScreenPerformance.xml"
     },
     {
