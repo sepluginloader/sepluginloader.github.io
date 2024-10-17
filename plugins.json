@@ -510,7 +510,7 @@
       "author": "Viktor",
       "tooltip": "Picks up ore extracted by the hand drill.",
       "description": "Picks up ore extracted by the hand drill.\n\nWorks both in creative and survival.\nWorks both in offline and online multiplayer worlds.\n\nThe plugin is configurable via chat commands:\n/pickup help    Prints this help on usage\n/pickup info    Prints the current settings\n/pickup on      Enables the plugin\n/pickup off     Disables the plugin\n/pickup ice     Toggles picking up ice\n/pickup stone   Toggles picking up stone\n\nThe plugin disables itself if a conflicting mod is detected.\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nOne time support via PayPal:\nhttps://www.paypal.com/paypalme/vferenczi/\n\nThank you!\n  ",
-      "modified": 1729143312,
+      "modified": 1729143703,
       "file": "Plugins/OrePickup.xml"
     },
     {
