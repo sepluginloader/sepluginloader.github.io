@@ -95,7 +95,7 @@
       "author": "avaness",
       "tooltip": "Companion plugin for the mod of the same name.",
       "description": "This plugin, when used with the associated mod, improves the accuracy of the result blueprint.\n\nWorkshop Mod:\nhttps://steamcommunity.com/sharedfiles/filedetails/?id=3016793407",
-      "modified": 1691602074,
+      "modified": 1729295928,
       "file": "Plugins/PluginBlueprintAPI.xml"
     },
     {
