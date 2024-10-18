@@ -677,7 +677,7 @@
       "author": "Viktor",
       "tooltip": "Automatically updates the code in programmable blocks.",
       "description": "This plugin automatically updates the code in programmable blocks whenever the corresponding Script.cs file changes.\n\nMore information:\nhttps://github.com/viktor-ferenczi/se-script-dev\n\nCompanion script merger and minifier tool:\nhttps://github.com/viktor-ferenczi/se-script-merge\n\nFor support join the SE Mods Discord:\nhttps://discord.gg/PYPFPGf3Ca\n\nPlease consider supporting my work on Patreon:\nhttps://www.patreon.com/semods\n\nOne time support via PayPal:\nhttps://www.paypal.com/paypalme/vferenczi/\n\nThank you!\n  ",
-      "modified": 1716490029,
+      "modified": 1729262528,
       "file": "Plugins/ScriptDev.xml"
     },
     {
