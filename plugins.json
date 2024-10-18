@@ -278,7 +278,7 @@
       "author": "WesternGamer",
       "tooltip": "Allows GPS Icon Scale to be changed.",
       "description": "Allows GPS Icon Scale to be changed with Alt + Shift + Scrollwheel.",
-      "modified": 1691695393,
+      "modified": 1729218997,
       "file": "Plugins/GPSMarkerScaling.xml"
     },
     {
