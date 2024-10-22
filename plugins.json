@@ -130,8 +130,8 @@
       "name": "Chat Filter",
       "author": "dude",
       "tooltip": "Mute individual players chat messages, or all of them!",
-      "description": "Block chat messsages from specific players or hide chat messages by type (global/faction/whisper). \n  /mute [player name] - blocks chat messages from a player.\n  /unmute [player name] - unblocks players messages.\n  /cfconfig - open configuration window to set visibility for a specific chat channel.",
-      "modified": 1670709061,
+      "description": "Block chat messsages from specific players or hide chat messages by type (global/faction/whisper). \n  ** Gui improved so you dont need to use chat commands anymore **\n  /mute [player name] - blocks chat messages from a player.\n  /unmute [player name] - unblocks players messages.\n  /cfconfig - open configuration window to set visibility for a specific chat channel.",
+      "modified": 1729545980,
       "file": "Plugins/ChatFilter.xml"
     },
     {
