@@ -1209,6 +1209,14 @@
       "file": "Plugins/Mods/MultiplayerPredictionSwitcher.xml"
     },
     {
+      "id": "2697105687",
+      "name": "No HUD Tooltips",
+      "author": "Klime",
+      "tooltip": "Forces the game to be in a minimal HUD state, so block tooltips don't show",
+      "modified": 1715387466,
+      "file": "Plugins/Mods/NoHudTooltips.xml"
+    },
+    {
       "id": "1171575610",
       "name": "Particle Performance Optimization Pack",
       "author": "Nikolas March",
