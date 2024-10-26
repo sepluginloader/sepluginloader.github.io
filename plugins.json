@@ -46,6 +46,15 @@
       "file": "Plugins/SEAnalogWheels.xml"
     },
     {
+      "id": "theit8514/AssemblerSortPlugin",
+      "name": "Assembler Sorting",
+      "author": "theit8514",
+      "tooltip": "Sort Assemblers the best way",
+      "description": "Sorts the assemblers on the Production GUI.\n  \nSort order:\n  1. The current selected block (if it is an Assembler) which is default selected.\n  2. Incomplete blocks are sorted to the bottom.\n  3. Then the assemblers are sorted by display name.\n  ",
+      "modified": 1729832561,
+      "file": "Plugins/AssemblerSorting.xml"
+    },
+    {
       "id": "Pas2704/AutoFactionChat",
       "name": "AutoFactionChat",
       "author": "Pas2704",
