@@ -229,15 +229,6 @@
       "file": "Plugins/FPSCounter.xml"
     },
     {
-      "id": "zznty/FactionUnlimiter",
-      "name": "Faction Unlimiter",
-      "author": "zznty",
-      "tooltip": "Removes 3 charaters faction tag length restriction",
-      "description": "Removes 3 charaters faction tag length restriction.\nNow you able to use tags like NASA or DC and even longer as i believe that this is stupid rule because gui can display up to 6 chars.\nWorks in both single and multi players.",
-      "modified": 1668423120,
-      "file": "Plugins/FactionUnlimiter.xml"
-    },
-    {
       "id": "WesternGamer/FasterLoadGameScreen",
       "name": "Faster Load Game Screen",
       "author": "WesternGamer",
