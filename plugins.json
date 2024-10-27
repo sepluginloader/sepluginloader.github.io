@@ -1418,6 +1418,14 @@
       "description": "This will apply the overlay to ANY turret in the game without any additional work. That includes turrets added by other mods.\nThis will NOT work with some weapon core turrets because many of them are not actually turrets and do not inherit the turret API. As such, I can't use the turret API to modify their overlay.",
       "modified": 1644587755,
       "file": "Plugins/Mods/WhipsTurretOverlay.xml"
+    },
+    {
+      "id": "3354462869",
+      "name": "seengtest (Mod)",
+      "author": "dogboy",
+      "tooltip": "Replace for ship sounds",
+      "modified": 1617761110,
+      "file": "Plugins/Mods/SEENG.xml"
     }
   ]
 }
