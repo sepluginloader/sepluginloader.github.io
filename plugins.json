@@ -1384,6 +1384,15 @@
       "file": "Plugins/Mods/TextHudAPI.xml"
     },
     {
+      "id": "3357036851",
+      "name": "Vans Toolbar Tweaks",
+      "author": "VanLabyrinth",
+      "tooltip": "This mod improves the G-menu Block groups",
+      "description": "This is a simple mod that just changes some of the block groups to be more inline with what i believe they should be.",
+      "modified": 1659838136,
+      "file": "Plugins/Mods/VansToolbarTweaks.xml"
+    },
+    {
       "id": "2360788836",
       "name": "Welder Eyestrain Reduction",
       "author": "Vox Serico",
