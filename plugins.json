@@ -1259,6 +1259,16 @@
       "file": "Plugins/Mods/ProjectorProfiles.xml"
     },
     {
+      "id": "3354754263",
+      "name": "Rationalised Build Menu",
+      "author": "wellington6012",
+      "tooltip": "Better block groups in the G Menu",
+      "description": "I built this mod to be able to fit more blocks in the limited toolbar slots and have the block groups make more sense. Please see the mod's Workshop page (More Info) for the detailed description.",
+      "hidden": "false",
+      "modified": 1617761110,
+      "file": "Plugins/Mods/RationalisedBuildMenu.xml"
+    },
+    {
       "id": "2933216135",
       "name": "Rendering Improved",
       "author": "SEModder4",
