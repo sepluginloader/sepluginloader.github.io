@@ -1151,6 +1151,15 @@
       "file": "Plugins/Mods/koKRFontForTextHudAPI.xml"
     },
     {
+      "id": "2277303535",
+      "name": "L.U.C.1.A.N. Suit A.I. - Ghost Industries Ltd.",
+      "author": "Lucian V. Ghost",
+      "tooltip": "Warning, the L.U.C.1.A.N. Suit A.I. can be volatile, pessimistic and extremely sarcastic...",
+      "description": "Light Universal Computer, 1st Artificial Navigator\n\nAre you tired of that outdated boring Suit A.I. voice, always giving you the same warnings over and over?\nIn tandem with Lucas Inc., Ghost Industries Ltd. has put together a suit A.I. you won't get bored of.\nCharming and debonair, this Suit A.I. is a perfect gentleman at all times, and will inspire you to keep those hydrogen tanks filled.\n\nThis Suit A.I. Replacement has One Hundred And Seventy Individual Voice lines, with the potential for more to be added.\n\nWarning - The Suit A.I. can also be volatile, pessimistic and extremely sarcastic. Ghost Industries Ltd. is not held accountable for injury due to misunderstanding the warnings.\n\nThe Suit A.I. Mod utilises various audio portions that mods like No Breathing Sounds cancels out, so be careful when using those mods in combination, as some audio may not play in those situations.\nIt also adds Oxygen warnings with Taedian's Extra HUD Warnings Mod.\n\nReplaces the following Suit and Game Audio notifications:\n\n- Station, Suit and Ship Fuel Warnings\n- Hydrogen Warnings\n- Health Warnings\n- Handbrake and Antenna Alerts\n- Many Inventory Full Notifications\n- Oxygen Warnings (With Additional Mod)\n\nI thank all the people over the years who have inspired me to update this mod every so often.",
+      "modified": 1730660619,
+      "file": "Plugins/Mods/LucianSuitVoice.xml"
+    },
+    {
       "id": "3027776990",
       "name": "Larson's Sensible Scrolling",
       "author": "LarsonStole",
