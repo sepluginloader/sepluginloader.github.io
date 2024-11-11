@@ -246,6 +246,15 @@
       "file": "Plugins/FileCleaner.xml"
     },
     {
+      "id": "klightspeed/FixMissingTreesPlugin",
+      "name": "Fix invisible trees",
+      "author": "Ben Peddell",
+      "tooltip": "Fix an LOD issue causing invisible trees",
+      "description": "\n\t  This plugin fixes the client-side issue in https://support.keenswh.com/spaceengineers/pc/topic/44535-client-side-environment-item-e-g-tree-lod-issue\n\t  \n\t  This was caused by the function populating environment items incorrectly removing the number of items that had already been spawned\n\t  from the number of items considered for the target LOD.\n\t  \n\t  i.e. if there were 39 items spawned and the target LOD should consider 107 items, it was only considering 68 items\n  ",
+      "modified": 1730743864,
+      "file": "Plugins/FixMissingTreesPlugin.xml"
+    },
+    {
       "id": "BDCarrillo/EyeAdaptation",
       "name": "FixedEyeAdaptation",
       "author": "BDCarrillo and Muzzled",
