@@ -445,6 +445,15 @@
       "file": "Plugins/ModDebugBuild.xml"
     },
     {
+      "id": "ari-steas/ModNetworkProfiler",
+      "name": "ModNetworkProfiler",
+      "author": "Aristeas",
+      "tooltip": "Displays and logs mod networking status.",
+      "description": "This plugin creates a seperate window upon launching Space Engineers that displays information about mod networking, including packet count and size. It also generates a log file for this information, located in the game's AppData folder.",
+      "modified": 1732501855,
+      "file": "Plugins/ModNetworkProfiler.xml"
+    },
+    {
       "id": "Math0424/MorePPSettings",
       "name": "More PP Settings",
       "author": "Math0424",
