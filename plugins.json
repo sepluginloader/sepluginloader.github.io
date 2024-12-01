@@ -1332,6 +1332,16 @@
       "file": "Plugins/Mods/RotateSkyboxWithSun.xml"
     },
     {
+      "id": "3373409754",
+      "name": "SEENG-Apex)",
+      "author": "dogboy",
+      "tooltip": "Imitate ship engine sounds (ship acceleration\\decelaration RPM etc) FAQ in the description",
+      "description": "How to: just instal at least one ion thruster in each direction. For hot-swap sound packs or auto-select using ship name requair SEENG Core (soon) ",
+      "hidden": "false",
+      "modified": 1617761110,
+      "file": "Plugins/Mods/SEENG_APEX.xml"
+    },
+    {
       "id": "1289657379",
       "name": "Screen Gunk Be Gone!",
       "author": "Whiplash141",
