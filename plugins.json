@@ -97,7 +97,7 @@
       "tooltip": "Terminal UI improvements: Group renaming, block filter, show default block names.",
       "description": "Terminal UI improvements \n- Group renaming\n- Block filter\n- Show default block names\n  \nFor more information please see the plugin's GitHub page:\nhttps://github.com/viktor-ferenczi/se-better-terminal\n\nPlease consider supporting my work:\n- Patreon: https://www.patreon.com/semods\n- PayPal: https://www.paypal.com/paypalme/vferenczi/\n\nBug reporting channel: #bug-reports\nSE Mods Discord https://discord.gg/PYPFPGf3Ca\n    \nEnjoy!\n",
       "hidden": "true",
-      "modified": 1734327241,
+      "modified": 1734600742,
       "file": "Plugins/BetterTerminal.xml"
     },
     {
