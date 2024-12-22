@@ -732,7 +732,7 @@
       "tooltip": "Copy, cut and blueprint grid sections",
       "description": "Allows for selecting a section of a grid, then copying, cutting, deleting or blueprinting the blocks inside it.\n    \nThis is an implementation of a publicly announced Space Engineers 2 feature.\n\nDemo video: https://www.youtube.com/watch?v=W0S-wIaIZ80 \n    \nFor more information please see the plugin's GitHub page:\nhttps://github.com/viktor-ferenczi/se-sections\n\nPlease consider supporting my work:\n- Patreon: https://www.patreon.com/semods\n- PayPal: https://www.paypal.com/paypalme/vferenczi/\n\nBug reporting channel: #bug-reports\nSE Mods Discord https://discord.gg/PYPFPGf3Ca\n    \nEnjoy!\n",
       "hidden": "true",
-      "modified": 1734860612,
+      "modified": 1734880830,
       "file": "Plugins/Sections.xml"
     },
     {
