@@ -420,6 +420,15 @@
       "file": "Plugins/LargePlanets.xml"
     },
     {
+      "id": "StarCpt/SE-BigAssemblerOrders",
+      "name": "Larger Assembler Orders",
+      "author": "StarCpt",
+      "tooltip": "Allows larger assembler order amounts",
+      "description": "This plugin adds Ctrl+Shift+Alt keybind to add 10,000 items to the queue.",
+      "modified": 1736233571,
+      "file": "Plugins/BigAssemblerOrders.xml"
+    },
+    {
       "id": "malware-dev/MDK-Debug",
       "name": "MDK Debug",
       "author": "Malware",
