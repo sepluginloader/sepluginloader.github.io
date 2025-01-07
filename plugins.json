@@ -575,7 +575,7 @@
       "tooltip": "Replace paint on your ship or station",
       "description": "Activate the paint replacement mode by holding down the Alt key while aiming at a block.\n\nAlt+MMB: Replace on the aimed subgrid\nCtrl+Alt+MMB: Replace on all subgrids\nCtrl+Shift+Alt+MMB: Replace on all connected ships\n    \nDemo video: https://youtu.be/8r47laAgTI8\n\nFor more information please see the plugin's GitHub page:\nhttps://github.com/viktor-ferenczi/se-paint-replacer\n\nPlease consider supporting my work:\n- Patreon: https://www.patreon.com/semods\n- PayPal: https://www.paypal.com/paypalme/vferenczi/\n\nBug reporting channel: #bug-reports\nSE Mods Discord https://discord.gg/PYPFPGf3Ca\n\nEnjoy!\n",
       "hidden": "false",
-      "modified": 1736143319,
+      "modified": 1736233975,
       "file": "Plugins/PaintReplacer.xml"
     },
     {
