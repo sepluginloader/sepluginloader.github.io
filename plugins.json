@@ -1188,6 +1188,16 @@
       "file": "Plugins/Mods/InvalidsAlternateUISound.xml"
     },
     {
+      "id": "3413495763",
+      "name": "Korean Font (Hide Platform Icons Included)",
+      "author": "Arstraea",
+      "tooltip": "Overwrite font definitions for adding Korean font, and also \"Hide Platform Icons\" feature included.",
+      "description": "\uac8c\uc784\uc758 \uc601\ubb38 \ud3f0\ud2b8 \uc815\uc758 \ud30c\uc77c\uc744 \ud55c\uae00 \ud3f0\ud2b8\uac00 \ud3ec\ud568\ub41c \uc815\uc758\ub85c \ub36e\uc5b4\uc501\ub2c8\ub2e4.\n  Hide Platform Icons \ubaa8\ub4dc\uc640 \uac19\uc774 \uc4f0\ub294 \uacbd\uc6b0 \uc801\uc6a9\uc774 \uc548\ub420 \uc218 \uc788\uc73c\ubbc0\ub85c, \uc774 \ubaa8\ub4dc\ub9cc \uc0ac\uc6a9\ud558\ub294 \uac78 \uad8c\uc7a5\ud569\ub2c8\ub2e4.\n  ",
+      "hidden": "true",
+      "modified": 1737724804,
+      "file": "Plugins/Mods/koKRFontAndHidePlatformIcons.xml"
+    },
+    {
       "id": "2940288034",
       "name": "Korean Font for RichHudMaster",
       "author": "Arstraea",
