@@ -936,6 +936,15 @@
       "file": "Plugins/Mods/BlockCulling.xml"
     },
     {
+      "id": "3410451798",
+      "name": "Block Indexer",
+      "author": "SnakeInventor",
+      "tooltip": "Adds controls to IMyTerminalBlock implementing blocks that automate adding indexes to block names",
+      "description": "Adds controls to IMyTerminalBlock implementing blocks taht automate adding indexes to block names\nFeatures:\n- Text field to set starting index manually\n- Button to add incrementing indexes to all selected blocks\n- Automatically adds letter prefixes to indexes with more than 2 digits to preserve sorting order.\n  ",
+      "modified": 1737287231,
+      "file": "Plugins/Mods/BlockIndexer.xml"
+    },
+    {
       "id": "1475392343",
       "name": "Build Colors",
       "author": "Sisk",
