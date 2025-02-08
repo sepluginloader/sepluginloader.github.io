@@ -808,6 +808,15 @@
       "file": "Plugins/TimeoutFix.xml"
     },
     {
+      "id": "Pas2704/ToolHelper",
+      "name": "Tool Helper",
+      "author": "Pas2704",
+      "tooltip": "Adds terminal controls to show the radius of ship tools.",
+      "description": "Adds terminal controls to show the radius of ship tools.\nThe radius color changes based on whether the tool is idle, active, or incomplete.\nThe keybind 'Alt + =' will toggle between showing normal and right-click drill radius.\nYou can use '/th clear' to quickly disable the visuals without going through the terminal.\nThere is also '/th toggle drills' as an alternative way to switch between showing normal and right-click drill radius.",
+      "modified": 1738958221,
+      "file": "Plugins/ToolHelper.xml"
+    },
+    {
       "id": "austinvaness/ToolSwitcherPlugin",
       "name": "Tool Switcher",
       "author": "avaness",
