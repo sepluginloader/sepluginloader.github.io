@@ -33,7 +33,7 @@
       "author": "Ananace",
       "tooltip": "Allows for true analog control of grids in Space Engineers",
       "description": "\n    Device lists and bind management are available under Plugin settings.\n  ",
-      "modified": 1705654571,
+      "modified": 1740238629,
       "file": "Plugins/AnalogGridControl.xml"
     },
     {
