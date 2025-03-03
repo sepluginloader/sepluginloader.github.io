@@ -1020,6 +1020,15 @@
       "file": "Plugins/Mods/CameraPanning.xml"
     },
     {
+      "id": "3299682578",
+      "name": "CastSpectatorSC",
+      "author": "Invalid",
+      "tooltip": "Enhancements to the spectator camera.",
+      "description": "Enhancements to the spectator camera based off of CastSpectator by Klime. Rebindable controls through TextHUDAPI",
+      "modified": 1659838136,
+      "file": "Plugins/Mods/CastSpectatorSC.xml"
+    },
+    {
       "id": "801185519",
       "name": "Colorful Icons",
       "author": "typekcz",
