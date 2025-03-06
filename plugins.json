@@ -716,7 +716,7 @@
       "author": "Aristeas",
       "tooltip": "Improves world load times.",
       "description": "Multithreads modscript compilation; can have a significant (20-50%) improvement in world load times.",
-      "modified": 1738176740,
+      "modified": 1741136244,
       "file": "Plugins/SEWorldLoadBoost.xml"
     },
     {
