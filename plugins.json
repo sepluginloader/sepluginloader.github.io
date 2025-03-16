@@ -1109,6 +1109,16 @@
       "file": "Plugins/Mods/EmissiveColors.xml"
     },
     {
+      "id": "3445281509",
+      "name": "Flight HUD (Mod)",
+      "author": "Brillcrafter",
+      "tooltip": "Displays your Azimuth, Elevation and Roll.",
+      "description": "This is a Mod that will display your current Azimuth, Elevation and Roll, with an Artificial Horizon and scrolling displays to help you keep oriented. REQUIRES TEXTHUDAPI TO WORK ",
+      "hidden": "false",
+      "modified": 1742079081,
+      "file": "Plugins/Mods/Flight HUD.xml"
+    },
+    {
       "id": "2950011596",
       "name": "Flight Vector",
       "author": "BDCarrillo",
