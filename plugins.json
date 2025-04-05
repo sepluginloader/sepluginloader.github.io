@@ -1127,6 +1127,16 @@
       "file": "Plugins/Mods/Flight Vector.xml"
     },
     {
+      "id": "3442090596",
+      "name": "GFA - Jump to Lightspeed",
+      "author": "enenra",
+      "tooltip": "Changes the Jump-Drive visual",
+      "description": "This mod swaps the Jump Drive effect with the sound and visual effet of the star wars hyperdrive.",
+      "hidden": "true",
+      "modified": 1743880103,
+      "file": "Plugins/Mods/GFA - Jump to Lightspeed.xml"
+    },
+    {
       "id": "2958267813",
       "name": "GPS Extended (Mod)",
       "author": "VengantMjolnir",
