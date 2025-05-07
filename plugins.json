@@ -334,6 +334,15 @@
       "file": "Plugins/HeadTracking.xml"
     },
     {
+      "id": "StrongBroArina2/SEHeadTrackingPlus",
+      "name": "HeadTrackingPlus",
+      "author": "Dogboy",
+      "tooltip": "Move ur head like u crazy in dat cockpit",
+      "description": "Updated version of Corben's SEHeadTracking Plugin",
+      "modified": 1745967057,
+      "file": "Plugins/HeadTrackingPlus.xml"
+    },
+    {
       "id": "StarCpt/SE-HideIpAddress",
       "name": "Hide Ip Address",
       "author": "StarCpt",
@@ -1196,6 +1205,16 @@
       "tooltip": "Adds a compass to the HUD. *Requires Text HUD API!*",
       "modified": 1637463068,
       "file": "Plugins/Mods/HudCompass.xml"
+    },
+    {
+      "id": "3473006210",
+      "name": "Hide Character In Seat",
+      "author": "Dogboy",
+      "tooltip": "Makes character invisible in cocpits.",
+      "description": "Will make your character fully invisible upon entering any cockpit /hpe to enable/disable Perfect for playing fast ships in first person and playing in VR",
+      "hidden": "false",
+      "modified": 1617761110,
+      "file": "Plugins/Mods/HideCharacterInSeat.xml"
     },
     {
       "id": "2819870318",
