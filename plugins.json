@@ -707,7 +707,7 @@
       "author": "Civicwar",
       "tooltip": "Direct Connect Made Easy",
       "description": "\n    This plugins enables you to direct connect to SE servers without needing to\n    go through the server list.\n    Check you config file for the server list.\n  ",
-      "modified": 1746587011,
+      "modified": 1746646477,
       "file": "Plugins/SEDirectConnect.xml"
     },
     {
