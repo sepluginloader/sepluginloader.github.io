@@ -816,6 +816,15 @@
       "file": "Plugins/StoreGUIFix.xml"
     },
     {
+      "id": "InfernoSuperNova/SE-TargetCamera",
+      "name": "Target Camera",
+      "author": "DeltaWing",
+      "tooltip": "Draws an on screen display of your current target.",
+      "description": " Compatible with both vanilla and WeaponCore. Obeys targeting rules of both systems.\n\nFOV is automatically adjusted to enclose the target. Scale and position can both be configured, as well as an optional minimum distance to cease drawing the camera.\n  \nTo use, simply select a target using either targeting methods.",
+      "modified": 1746694603,
+      "file": "Plugins/TargetCamera.xml"
+    },
+    {
       "id": "StalkR/Space-Engineers-Timeout-Fix",
       "name": "Timeout Fix",
       "author": "rexxar",
