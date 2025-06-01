@@ -362,3 +362,14 @@ h1, h2, h3, h4, h5, h6 {
 .expandable-parent:not(:checked) + label img {
 	transform: rotate(-90deg);
 }
+.warn-banner {
+	background-color: darkred;
+	color: white; 
+	padding: 10px;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+.warn-banner p {
+	margin: 0;
+	text-align: center;
+}
